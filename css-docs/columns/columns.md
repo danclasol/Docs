@@ -26,7 +26,7 @@ Esta propiedad establece el ancho MÍNIMO deseado, si no se especifica será el 
 }
 ```
 
-Tambien existe este shortcut para establecer ambas propiedades en una línea
+Tambien existe este shorthand para establecer ambas propiedades en una línea
 
 ```css
 .columns {
