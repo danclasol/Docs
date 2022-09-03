@@ -1,0 +1,30 @@
+body {
+  background-color: #333;
+  font-family: sans-serif;
+  color: #f0f8ff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.gallery {
+  columns: 4 200px;
+  column-gap: 10px;
+}
+
+.card {
+  display: inline;
+  background-color: rgb(255, 255, 255 / 0.5);
+  color: #333;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  margin-bottom: 10px;
+  filter: grayscale(0.8);
+}
+
+.card:hover {
+  filter: grayscale(0);
+  background-color: #fff;
+}
