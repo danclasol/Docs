@@ -1,15 +1,13 @@
 # flexbox
 
-Flexbox fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación.
+Flexbox es un modelo unidimensional de layout, que tiene como fin ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación.
 
-Flexbox maneja el layout en una sola dimensión a la vez, ya sea como fila o como columna. A diferencia del modelo bidimensional de `Grid`, el cual controla columnas y filas a la vez.
+Flexbox maneja el layout en una sola dimensión a la vez, ya sea como fila o como columna. A diferencia del modelo bidimensional de `grid`, el cual controla columnas y filas a la vez.
 
 - Consiste en un sistema de layout en 2 ejes, un eje principal al que llamaremos `main-axis` y un eje secundario al que llamaremos `cross-axis`
 - Trabaja con un sistema de padres e hijos, es decir, un contenedor que tenga hijos, al contenedor lo llamaremos `flex-container` y a los hijos `flex-items`, un hijo puede ser a su vez contenedor de otros hijos y ser a la vez `flex-item` y `flex-container`.
 
 Flexbox funciona a través de la propiedad `display`, y para crear un contenedor flexible pondremos: `display: flex` o `display: inline-flex`, dependerá de si queremos un contenedor de bloque o uno de línea
-
-Ejemplo uso con flexbox con parametros por defecto
 
 ```html
 <div class="container">
@@ -18,13 +16,15 @@ Ejemplo uso con flexbox con parametros por defecto
 </div>
 ```
 
-Por defecto, cuando ponemos `display: flex` los elementos se ordenan por el `main-axis` o eje principal. Es decir, se van colocando de izquierda a derecha.
-
-Si especificamos una altura para los items, intentaran ocupar todo el alto disponible. (\*Solo para contenedores e imagenes)
-
 ```css
 .container {
   display: flex;
+}
+```
+
+```css
+.container {
+  display: inline-flex;
 }
 ```
 
@@ -151,7 +151,7 @@ body {
 }
 ```
 
-- flex-end (end): Los elementos se colocan al final del eje principal.
+- `flex-end` (end): Los elementos se colocan al final del eje principal.
 
 ![flexbox-justify-content_flex-end](/css-docs//flexbox//images//flexbox_justify-content_flex-end.png)
 
@@ -162,7 +162,7 @@ body {
 }
 ```
 
-- center: Los elementos se colocan en el centro del eje principal.
+- `center`: Los elementos se colocan en el centro del eje principal.
 
 ![flexbox-justify-content_center](/css-docs//flexbox//images//flexbox_justify-content_center.png)
 
@@ -173,7 +173,7 @@ body {
 }
 ```
 
-- space-between: Los elementos se colocan con el mismo espacio entre ellos, colocando el primer hijo al principio del eje y el último al final del eje
+- `space-between`: Los elementos se colocan con el mismo espacio entre ellos, colocando el primer hijo al principio del eje y el último al final del eje
 
 ![flexbox-justify-content_space-between](/css-docs//flexbox//images//flexbox_justify-content_space-between.png)
 
@@ -184,7 +184,7 @@ body {
 }
 ```
 
-- space-around: Los elementos se colocan con el mismo espacio entre ellos, pero cada elemento tendrá la misma separación por los lados, ésto ocasiona que el primer y último elemento tengan menos separación.
+- `space-around`: Los elementos se colocan con el mismo espacio entre ellos, pero cada elemento tendrá la misma separación por los lados, ésto ocasiona que el primer y último elemento tengan menos separación.
 
 ![flexbox-justify-content_space-around](/css-docs//flexbox//images//flexbox_justify-content_space-around.png)
 
@@ -195,7 +195,7 @@ body {
 }
 ```
 
-- space-evenly: Los elementos se colocan con el mismo espacio entre ellos, y cada elemento tendrá la misma separación tanto entre ellos como el primero y el último.
+- `space-evenly`: Los elementos se colocan con el mismo espacio entre ellos, y cada elemento tendrá la misma separación tanto entre ellos como el primero y el último.
 
 ![flexbox-justify-content_space-evenly](/css-docs//flexbox//images//flexbox_justify-content_space-evenly.png)
 
@@ -210,7 +210,7 @@ body {
 
 Con esta propiedad vamos a poder alinear los elementos en el `cross-axis` o eje secundario.
 
-El valor por defecto es `stretch`, que hace que los elementos se estiren para ocupar todo el espacio disponible, siempre y cuando no tengan un `height` o `width` declarado, dependiendo de la dirección del `main-axis`.
+El valor por defecto es `stretch`, que hace que los elementos se estiren para ocupar todo el espacio disponible, siempre y cuando no tengan un `height` o `width` declarado, dependiendo de la dirección del `main-axis`. (\*Solo para contenedores e imagenes)
 
 No conocer esto es el motivo principal por el que se deforman las imágenes cuando usamos flexbox.
 
@@ -225,7 +225,7 @@ body {
 
 Aparte de `stretch` tenemos más valores disponibles
 
-- flex-start: Coloca los elementos al principio del `cross-axis`
+- `flex-start`: Coloca los elementos al principio del `cross-axis`
 
 ![flexbox-align-items_flex-start](/css-docs//flexbox//images//flexbox_align-items_flex-start.png)
 
@@ -236,7 +236,7 @@ body {
 }
 ```
 
-- flex-end: Coloca los elementos al final del `cross-axis`
+- `flex-end`: Coloca los elementos al final del `cross-axis`
 
 ![flexbox-align-items_flex-end](/css-docs//flexbox//images//flexbox_align-items_flex-end.png)
 
@@ -247,7 +247,7 @@ body {
 }
 ```
 
-- center: Coloca los elementos en el centro del `cross-axis`
+- `center`: Coloca los elementos en el centro del `cross-axis`
 
 ![flexbox-align-items_center](/css-docs//flexbox//images//flexbox_align-items_center.png)
 
@@ -258,7 +258,7 @@ body {
 }
 ```
 
-- baseline: Todos los elementos flexibles son ajustados de modo que sus bases queden alineadas.
+- `baseline`: Todos los elementos flexibles son ajustados de modo que sus bases queden alineadas.
 
 ![flexbox-align-items_baseline](/css-docs//flexbox//images//flexbox_align-items_baseline.png)
 
@@ -287,7 +287,7 @@ body {
 
 Pero tenemos disponibles los mismos valores que en `justify-content`:
 
-- flex-start: Los elementos se colocan al final del eje secundario.
+- `flex-start`: Los elementos se colocan al final del eje secundario.
 
 ![flexbox-align-content_flex-start](/css-docs//flexbox//images//flexbox_align-content_flex-start.png)
 
@@ -299,7 +299,7 @@ body {
 }
 ```
 
-- flex-end: Los elementos se colocan al final del eje secundario.
+- `flex-end`: Los elementos se colocan al final del eje secundario.
 
 ![flexbox-align-content_flex-end](/css-docs//flexbox//images//flexbox_align-content_flex-end.png)
 
@@ -311,7 +311,7 @@ body {
 }
 ```
 
-- center: Los elementos se colocan en el centro del eje secundario.
+- `center`: Los elementos se colocan en el centro del eje secundario.
 
 ![flexbox-align-content_center](/css-docs//flexbox//images//flexbox_align-content_center.png)
 
@@ -323,7 +323,7 @@ body {
 }
 ```
 
-- space-between: Los elementos se colocan con el mismo espacio entre ellos, colocando el primer hijo al principio del eje y el último al final del eje
+- `space-between`: Los elementos se colocan con el mismo espacio entre ellos, colocando el primer hijo al principio del eje y el último al final del eje
 
 ![flexbox-align-content_space-between](/css-docs//flexbox//images//flexbox_align-content_space-between.png)
 
@@ -335,7 +335,7 @@ body {
 }
 ```
 
-- space-around: Los elementos se colocan con el mismo espacio entre ellos, pero cada elemento tendrá la misma separación por los lados, ésto ocasiona que el primer y último elemento tengan menos separación.
+- `space-around`: Los elementos se colocan con el mismo espacio entre ellos, pero cada elemento tendrá la misma separación por los lados, ésto ocasiona que el primer y último elemento tengan menos separación.
 
 ![flexbox-align-content_space-around](/css-docs//flexbox//images//flexbox_align-content_space-around.png)
 
@@ -347,7 +347,7 @@ body {
 }
 ```
 
-- space-evenly: Los elementos se colocan con el mismo espacio entre ellos, y cada elemento tendrá la misma separación tanto entre ellos como el primero y el último.
+- `space-evenly`: Los elementos se colocan con el mismo espacio entre ellos, y cada elemento tendrá la misma separación tanto entre ellos como el primero y el último.
 
 ```css
 body {
@@ -357,7 +357,7 @@ body {
 }
 ```
 
-## column-gap
+# column-gap
 
 Esta propiedad nos permite establecer espaciado entre columnas
 
@@ -368,7 +368,7 @@ body {
 }
 ```
 
-## row-gap
+# row-gap
 
 Esta propiedad nos permite establecer espaciado entre filas
 
@@ -379,7 +379,7 @@ body {
 }
 ```
 
-## gap
+# gap
 
 Esta propiedad nos permite establecer espaciado entre filas y columnas, el primer valor será para filas y el segundo para columnas, si sólo ponemos un valor, se aplicará a filas y columnas
 
@@ -390,7 +390,7 @@ body {
 }
 ```
 
-## flex-grow
+# flex-grow
 
 Esta propiedad nos permite controlar el factor de crecimiento de un elemento, es decir, del espacio restante disponible, cuanta parte le corresponde a él.
 
@@ -468,9 +468,9 @@ Estos serían los calculos que se estan haciendo el navegador por detras:
 
 # flex-basis
 
-Esta propiiedad nos sirve para especificar cual es el tamaño inicial de un elemento flexible en el `main-axis`, si utilizamos `width` o `height` prevalecerá el valor de `flex-basis` que le corresponda dependiendo de la orientación del `main-axis`
+Esta propiedad nos sirve para especificar cual es el tamaño inicial de un elemento flexible en el `main-axis`, si utilizamos `width` o `height` prevalecerá el valor de `flex-basis` que le corresponda dependiendo de la orientación del `main-axis`
 
-El valor por defecto es auto
+El valor por defecto es `auto`.
 
 ```css
 .item {
@@ -633,5 +633,43 @@ Por ejemplo, si tenemos todos los items de este contenedor alineados centrados, 
 ```css
 .item:nth-child(2) {
   align-self: end;
+}
+```
+
+# Margin auto en contenedor `flex`
+
+El `margin: auto` tiene un comportamiento especial si se lo asignamos a un hijo de un contendor `flex`.
+
+```html
+<div class="container">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+}
+```
+
+Si aplicamos `margin: auto` a todos los items, funciona igual que si al contenedor le pusieramos `justify-content: space-around`
+
+```css
+.item {
+  margin: auto;
+}
+```
+
+Pero si se lo ponemos solo a un elemento, podemos conseguir separarlo del resto.
+
+Se aplica el margin al primero elemento y empuja al resto a la derecha
+
+![flexbox-margin-auto](/css-docs//flexbox//images//flex-margin-auto.PNG)
+
+```css
+.item:nth-child(1) {
+  margin: auto;
 }
 ```
