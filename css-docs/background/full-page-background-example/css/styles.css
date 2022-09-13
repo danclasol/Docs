@@ -1,0 +1,8 @@
+html {
+  background-image: url(/assets/images/bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  /* background: url(/assets/images/bg.jpeg) no-repeat center center fixed; */
+}
