@@ -16,11 +16,39 @@
 
 # Prefijos propietarios
 
+# Metodologia BEM
+
+# Variables CSS
+
+# Responsive y media queries
+
+# Background
+
+# Degradados
+
+# Pseudo clases
+
+# Pseudo elementos
+
+# Formularios
+
+# Listas en CSS
+
+# Funciones en CSS
+
+# Clip path
+
+# Filtros
+
 # Layouts
 
 - Columns
 - Flexbox
 - Grid
+
+# Transforms
+
+# Transitions
 
 # Utils
 
