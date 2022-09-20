@@ -65,7 +65,7 @@ let cadena2 = "Hola youtube, estamos trabajando con cadenas";
 console.log("trim", cadena2.trim());
 ```
 
-//ES6--
+## \*Métodos incluidos con ES6
 
 # startsWith(valor [,inicio])
 
@@ -81,20 +81,22 @@ console.log('startsWith("M", 5)', cadena.startsWith("M", 5));
 
 Sirve para saber si la cadena termina con ese valor. Devuleve true o false
 
-````js
+```js
 console.log('endsWith("o")', cadena.endsWith("o"));
 console.log('endsWith("a", 4)', cadena.endsWith("a", 4));
 console.log('endsWith("n", 8)', cadena.endsWith("n", 8));
 console.log('endsWith("Mundo")', cadena.endsWith("Mundo"));
-```js
+```
 
 # includes(valor[,inicio])
+
 Igual que indexOf pero devuelve true o false
+
 ```js
 console.log('includes("n")', cadena.includes("n"));
 console.log('includes("a", 5)', cadena.includes("a", 5));
 console.log('includes("a", 2)', cadena.includes("a", 2));
-````
+```
 
 # repeat(valor)
 

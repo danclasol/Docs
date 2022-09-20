@@ -1,11 +1,3 @@
-# length
-
-Devuelve la cantidad de elementos en array
-
-```js
-console.log("lenght", myArray.length);
-```
-
 # push
 
 Añade uno o más elementos al final de un array y devuelve la nueva longitud del array
@@ -65,7 +57,7 @@ const myArray = [1, 2, 3, 4];
 
 # forEach
 
-Recorre un array elemento a elemento
+Recorre el array y ejecuta la función indicada una vez por cada elemento del array
 
 ```js
 myArray.forEach((element, index, array) => {
@@ -124,4 +116,52 @@ const words = [
 ];
 const result = words.filter((word) => word.length > 6);
 console.log(result);
+```
+
+# find
+
+Devuelve el valor del primer elemento del array que cumple la condición
+
+```js
+const array1 = [5, 12, 8, 130, 44];
+const found = array1.find((element) => element > 10);
+
+console.log(found); // OUTPUT: 12
+```
+
+# sort
+
+Ordena los elementos de un array alfabéticamente(valor Unicode)
+
+```js
+const letters = ["b", "c", "z", "a"];
+console.log(letters.sort());
+```
+
+Si le pasamos un callback los ordena en función del algoritmo que le pasemos.
+
+```js
+console.log(numbers.sort((a, b) => a - b));
+```
+
+# some
+
+Comprueba si al menos un elemento del array cumple la condición del callback
+
+```js
+const array = [1, 2, 3, 4, 5];
+const even = (element) => element % 2 === 0;
+
+console.log(array.some(even)); // OUTPUT: true
+```
+
+# every
+
+Comprueba si todos los elementos del array cumplen la condición
+
+```js
+const array = [1, 2, 3, 4, 5];
+const even = (element) => element % 2 === 0;
+
+console.log(array.some(even)); // OUTPUT: false
 ```
