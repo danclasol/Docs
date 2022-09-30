@@ -1,5 +1,7 @@
 # Funciones anonimas
 
+Las funciones anónimas o funciones lambda son un tipo de funciones que se declaran sin nombre de función y se alojan en el interior de una variable y haciendo referencia a ella cada vez que queramos utilizarla.
+
 ```js
 const saludarFunction = function (nombre, apellidos) {
   return `Hola ${nombre} ${apellidos}`;
