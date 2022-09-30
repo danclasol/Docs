@@ -50,3 +50,17 @@ const factura = {
 
 console.log(factura.calcularTotal(0.8));
 ```
+
+# Método toString()
+
+Simplemente por generar una variable de tipo `object`, esa variable hereda una serie de métodos.
+
+Un buen ejemplo, sería el método .toString(), un método que intenta representar la información de ese objeto en un `string`.
+
+```js
+const objeto = {};
+objeto.toString(); // Devuelve "[object Object]" (representación textual de un objeto genérico)
+
+const number = 42; // Tipo Number
+number.toString(); // Devuelve "42"
+```

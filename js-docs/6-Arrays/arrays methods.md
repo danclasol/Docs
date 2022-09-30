@@ -165,3 +165,11 @@ const even = (element) => element % 2 === 0;
 
 console.log(array.some(even)); // OUTPUT: false
 ```
+
+# from
+
+Crea una nueva instancia de Array a partir de un objeto iterable.
+
+```js
+Array.from("foo"); // ["f","o","o"]
+```
