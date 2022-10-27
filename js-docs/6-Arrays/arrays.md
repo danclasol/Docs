@@ -6,6 +6,7 @@
 - Se declaran con llaves cuadradas o corchetes []
 - Pueden declararse vacíos o con un contenido ya establecido
 - Pueden añadirse o eliminarse elementos en el momento que queramos
+- En Javascript array no es un tipo de datos, si no que son objetos que poseen métodos para iterarlos. Los objetos no tienen estos métodos
 
 Example of array creation
 

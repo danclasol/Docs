@@ -5,6 +5,7 @@
 - Callbacks
 - Funciones autoejecutables
 - Clausuras
+- Generadoras
 
 # Funciones con nombres o nombradas
 

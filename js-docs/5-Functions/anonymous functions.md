@@ -46,3 +46,5 @@ Utilizamos la funcion anomina que muestra una alerta
 ```js
 saludar(obtenerSaludo, alertSaludo);
 ```
+
+# Ambito this

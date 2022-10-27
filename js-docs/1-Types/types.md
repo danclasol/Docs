@@ -50,7 +50,9 @@ const miObjeto = {};
 
 # Symbol
 
-Símbolo (valor único)
+Símbolo (valor único).
+
+Nos permiten crear propiedades unicas e inmutables.
 
 ```js
 const simbolo = Symbol(1);
