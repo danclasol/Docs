@@ -17,6 +17,17 @@ Set container with `display: flex`, and use the properties `justify-center` and 
 }
 ```
 
+# with grid
+
+All elements will have the `width` of the wider element.
+
+```css
+.container {
+  display: grid;
+  place-content: center;
+}
+```
+
 # center position absolute element with transform
 
 An item with `position: absolute` inside a `flexbox` container won't be centered with `justifiy-content` or `align-items`

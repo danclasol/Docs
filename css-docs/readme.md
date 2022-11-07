@@ -24,6 +24,20 @@
 
 # Background
 
+- background-color
+- background-image
+- background-repeat
+- background-position
+- background-size
+- background-attachment
+- background-origin
+- background-clip
+- Multiple backgrounds
+- Shorthand background
+- Examples
+  - Parallax Effect
+  - Full Page Image Background
+
 # Degradados
 
 # Pseudo clases
@@ -48,7 +62,20 @@
 
 # Transforms
 
+- translate
+- rotate
+- perspective
+- scale
+- skew
+- Multiple transforms
+- Matrix
+- Common problems with transform
+
 # Transitions
+
+# Images
+
+- Utils
 
 # Utils
 
