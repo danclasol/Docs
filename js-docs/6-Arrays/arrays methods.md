@@ -173,3 +173,14 @@ Crea una nueva instancia de Array a partir de un objeto iterable.
 ```js
 Array.from("foo"); // ["f","o","o"]
 ```
+
+# slice
+
+Crea una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin (fin no incluido).
+
+```js
+const array = [1, 2, 3, 4, 5];
+const myArray = array.slice(1, 3); // [2,3]
+
+console.log("slice", myArray);
+```
