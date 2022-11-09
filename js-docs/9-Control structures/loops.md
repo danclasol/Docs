@@ -148,3 +148,34 @@ for (const element of array) {
 - To iterate with the keys of objects
 - We know the number of executions, the length of the object
 - Most usage for testing, to log all properties of an object
+
+# Labels Loops
+
+You can use a label to identify a loop, and then use the `break` or `continue` statements to indicate whether a program should interrupt the loop or continue its execution
+
+It can be usefull for nested loops, where we need to stop the execution of one loop inside another one.
+
+The syntax is `label: loop`.
+
+```js
+let seconds = 1;
+let minutes = 0;
+
+increaseMinutes: while (true) {
+  console.log(`Loop minutes: ${minutes}:${seconds}`);
+
+  increaseSeconds: while (true) {
+    seconds += 1;
+
+    if (minutes === 1) break increaseMinutes;
+
+    if (seconds === 60) {
+      seconds = 0;
+      break increaseSeconds;
+    }
+
+    console.log(`Loop seconds: ${minutes}:${seconds}`);
+  }
+  minutes += 1;
+}
+```
