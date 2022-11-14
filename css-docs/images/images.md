@@ -2,6 +2,8 @@
 
 Con el `display: block` eliminamos el borde inferior fantasma que el navegador le pone por defecto a las imagenes
 
+Con el `max-width: 100%` conseguimos que la imagen se ajuste a tu contenedor, si no lo ponemos las imagenes se van a desbordar si son muy grandes.
+
 ```css
 img {
   max-width: 100%;
