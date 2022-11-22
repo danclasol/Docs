@@ -78,7 +78,7 @@ grid-template-columns: 1fr auto;
 
 ## `fit-content`
 
-Es una mezcla entre `min-content` y ``max-content`. Como parámetro le dirémos cual es su máximo, y como mínimo será `min-content`
+Es una mezcla entre `min-content` y `max-content`. Como parámetro le dirémos cual es su máximo, y como mínimo será `min-content`
 
 ```css
 grid-template-columns: 1fr fit-content(200px);
