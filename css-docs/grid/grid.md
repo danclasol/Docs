@@ -234,6 +234,12 @@ Es equivalente a:
 grid-column: 2 / span 4;
 ```
 
+Si queremos que un elemento ocupe todas las columnas disponibles, podemos utilizar '-1' para que empize a contar desde la derecha
+
+```css
+grid-column: 1 / -1;
+```
+
 En el caso de que queramos que ocupe todas las columnas o filas disponibles podemos usar como valor `-1` para que llegue hasta la última `grid-line` disponible.
 
 # Grid áreas
