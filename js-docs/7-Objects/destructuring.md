@@ -51,6 +51,20 @@ console.log(name); // 30
 console.log(restPerson); // {name: "Peter", surname: "Smith"}
 ```
 
+# Default values
+
+Podemos declarar valores por defecto al destructurar un objeto, para el caso de que la variable extraida sea `undefinded`.
+
+```js
+const person = { name: "Peter", surname: "Smith" };
+
+const { name, surname, age = 18 } = person;
+
+console.log(name); // {name: "Peter"}
+console.log(surname); // {surname: "Smith"}
+console.log(age); // {age: 18}
+```
+
 # Nested objects
 
 Cuando tenemos objetos que tienen como propiedades otro objeto, podemos 2 opciones para destructurarlos:
@@ -96,34 +110,6 @@ console.log(postalCode); // 88686
 
 # Casos útiles
 
-## Intercambio de variables
-
-La forma normal, sería crear una variable intermedia para almacener el primer objeto para no perder sus datos.
-
-```js
-let var1 = "Dog";
-let var2 = "Cat";
-
-let aux = var1;
-var1 = var2;
-var2 = aux;
-
-console.log(var1); // Cat
-console.log(var2); // Dog
-```
-
-Con destructuring podemos hacerlo en una sola línea y sin utilizar variables intermedias.
-
-```js
-let var1 = "Dog";
-let var2 = "Cat";
-
-[var2, var1] = [var1, var2];
-
-console.log(var1); // Cat
-console.log(var2); // Dog
-```
-
 ## Parámetros de funciones
 
 Tambien podemos destructurar los parametros objeto de una funcion.
@@ -156,18 +142,6 @@ console.log(getFullNameWithDestructuring(person, "Another param"));
 ## Return de funciones
 
 Si una funcion devuelve un objeto o un array, podemos destructurar el return.
-
-### Array
-
-```js
-function getSalary() {
-  return [970, 1020, 980, 1123];
-}
-
-const [salary1, salary2, salary3, salary4] = getSalary();
-```
-
-### Objects
 
 ```js
 function getSalary() {
