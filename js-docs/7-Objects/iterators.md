@@ -1,6 +1,4 @@
-# Static Methods
-
-## Object.keys
+# Object.keys
 
 Devuelve un array con las propiedades del objeto pasado como parámetro.
 
@@ -15,7 +13,7 @@ console.log(Object.keys(person)); // ['name','surname','age']
 console.log(Object.keys(person).lenght); // lenght: 3
 ```
 
-## Object.values
+# Object.values
 
 Devuelve un array con los valores de las propiedades del objeto pasado como parámetro.
 
@@ -39,7 +37,7 @@ console.log(
 ); // lenght: 4200
 ```
 
-## Object.entries
+# Object.entries
 
 Devuelve un array con las propiedades y valores en `[clave, valor]` del objeto pasado como parámetro.
 
@@ -68,7 +66,7 @@ Object.keys(person).forEach((par) => {
 console.log(person); // {name: 'PETER, surname: 'CLARK', age: 30}
 ```
 
-## Object.fromentries
+# Object.fromEntries
 
 Transforma una lista de clave-valor en un objeto
 
@@ -82,7 +80,7 @@ const person = [
 console.log(Object.fromEntries(person)); // {name: "Peter", surname: "Clark", age: 30}
 ```
 
-## Object.assign
+# Object.assign
 
 Copia todas las propiedades de un objeto.
 
