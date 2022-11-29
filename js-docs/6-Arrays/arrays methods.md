@@ -144,6 +144,18 @@ Si le pasamos un callback los ordena en función del algoritmo que le pasemos.
 console.log(numbers.sort((a, b) => a - b));
 ```
 
+Ordenar una lista de objetos, por una propiedad en concreto.
+
+```js
+const objs = [
+  { name: "John", surname: "Smith" },
+  { name: "Peter", surname: "Parker" },
+  { name: "Marie", surname: "Curie" },
+];
+
+console.log(objs.sort((a, b) => (a.name > b.name ? 1 : -1)));
+```
+
 # some
 
 Comprueba si al menos un elemento del array cumple la condición del callback
