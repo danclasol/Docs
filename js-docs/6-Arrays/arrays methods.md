@@ -79,10 +79,8 @@ console.log("newArray", newArray);
 Tranforma un array en un unico valor
 
 ```js
-const total1 = myArray.reduce((a, b) => a + b);
-const total2 = newArray.reduce((a, b) => a + b);
-console.log("total1", total1);
-console.log("total2", total2);
+const total = myArray.reduce((total, currentValue) => total + currentValue, 0);
+console.log("total", total);
 ```
 
 # map + reduce
