@@ -8,7 +8,20 @@
 - Pueden añadirse o eliminarse elementos en el momento que queramos
 - En Javascript array no es un tipo de datos, si no que son objetos que poseen métodos para iterarlos. Los objetos no tienen estos métodos
 
-Example of array creation
+# Creation
+
+```js
+const array = [1, 2, 3, 4];
+const array = ["a", "b", "c", "d"];
+```
+
+Crear array con un determinado numero de elementos
+
+```js
+const array = Array(5); // [empty x 5]
+```
+
+En Js, podemos crear array con distintos tipos de datos.
 
 ```js
 const myArray = [

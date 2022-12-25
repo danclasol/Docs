@@ -182,6 +182,20 @@ Crea una nueva instancia de Array a partir de un objeto iterable.
 
 ```js
 Array.from("foo"); // ["f","o","o"]
+Array.from(new Set(["foo", "bar", "baz", "foo"])); // [ "foo", "bar", "baz" ]
+Array.from(
+  new Map([
+    [1, 2],
+    [2, 4],
+    [4, 8],
+  ])
+); // [[1, 2], [2, 4], [4, 8]]
+```
+
+Pasandole una arrow function al `from`, podemos manipular cada elemento insertado
+
+```js
+Array.from(Array(5), (v, index) => index + 1); // [1,2,3,4,5]
 ```
 
 # slice
