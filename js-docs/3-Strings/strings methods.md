@@ -33,6 +33,14 @@ Remplaza el fragmento de la cadena que le digamos y pone el valor nuevo
 console.log("replace", cadena.replace("Mundo", "Youtube"));
 ```
 
+# replaceAll(valor a buscar, valor nuevo)
+
+Remplaza todas las concurrencias de la cadena que le digamos y pone el valor nuevo
+
+```js
+console.log("replaceAll", cadena.replaceAll("Loro", "o")); // Lr
+```
+
 # substring(inicio [,fin])
 
 Extrae los caracteres desde inicio hasta fin (el final no se incluye)
@@ -73,6 +81,30 @@ Elimina los espacios al inicio y al final de la cadena
 ```js
 let cadena2 = "Hola youtube, estamos trabajando con cadenas";
 console.log("trim", cadena2.trim());
+```
+
+# padStart()
+
+Rellena una cadena hasta la longitud indicada colocando al principio los caracteres pasados como parametro.
+
+Se le puede indicar los caracteres con lo que rellenar la cadena.
+
+```js
+"123".padStart(6); // "   123"
+"123".padStart(6, "0"); // "000123"
+"abc".padStart(6, "123465"); // "123abc"
+```
+
+# padEnd()
+
+Rellena una cadena hasta la longitud indicada colocando al final los caracteres pasados como parametro.
+
+Se le puede indicar los caracteres con lo que rellenar la cadena.
+
+```js
+"123".padEnd(6); // "123   "
+"123".padEnd(6, "0"); // "123000"
+"abc".padEnd(6, "123465"); // "abc456"
 ```
 
 # startsWith(valor [,inicio])
