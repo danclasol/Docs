@@ -18,7 +18,7 @@ console.log(persona["nombre"]);
 
 # Modificar propiedades
 
-\*Aunque persona sea una constante, las propiedades si se pueden modificar
+Aunque persona sea una constante, las propiedades si se pueden modificar
 
 ```js
 persona.nombre = "Pepe";
