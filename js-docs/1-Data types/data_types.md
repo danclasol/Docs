@@ -58,6 +58,12 @@ Nos permiten crear propiedades unicas e inmutables.
 const simbolo = Symbol(1);
 ```
 
+Nunca va a haber 2 Symbols iguales
+
+```js
+Symnbol() == Symbol(); // false
+```
+
 # null
 
 Representa un valor nulo o vacío
