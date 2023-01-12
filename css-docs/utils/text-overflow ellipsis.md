@@ -42,3 +42,35 @@ p {
   text-overflow: " [..]";
 }
 ```
+
+Utilizando webkit
+https://www.youtube.com/watch?v=OhCzEjXvY9A
+
+<p class="overflow">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
+</p>
+
+```css
+.overflow {
+  --max-lines: 5;
+
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
+}
+```
+
+Otra opcion sin usar webkit, es calculando la altura maxima segun el tamaño de la fuente (por defecto: 1em) y el `line-height`
+
+```css
+.overflow {
+  --max-lines: 5;
+  --line-height: 1.4;
+
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  line-height: var(--line-height);
+
+  overflow: hidden;
+}
+```

@@ -41,7 +41,7 @@ Instead we can use `transform` to center elements with `absolute`.
   height: 150px;
   border: 1px dashed #fff;
   display: flex;
-  justify-center: center;
+  justify-content: center;
 }
 ```
 
