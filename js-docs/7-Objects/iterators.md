@@ -1,3 +1,9 @@
+# Iterate objects
+
+Objects are not iterables. We can't use a `for..of` to iterate all the properties of an object.
+
+However, we can use the static methods provided by Object to manipulate the key/value as arrays.
+
 # Object.keys
 
 Devuelve un array con las propiedades del objeto pasado como parámetro.
