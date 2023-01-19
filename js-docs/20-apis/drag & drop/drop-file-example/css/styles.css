@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-color: #29738f;
+  font-family: sans-serif;
+  color: white;
+  user-select: none;
+}
+
+.container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+#drop-zone {
+  border: 2px dotted white;
+  padding: 0 1rem;
+}
