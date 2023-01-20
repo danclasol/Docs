@@ -78,7 +78,7 @@ Se dispara cuando el objeto sale de la zona de destino
 dropZone.addEventListener("dragleave", () => {});
 ```
 
-# dataTransfer
+# DataTransfer
 
 Esta propiedad presente en todos los eventos de arrastre contiene datos sobre la operación de arrastre y colocación.
 
@@ -107,4 +107,52 @@ e.dataTransfer.clearData(); // elimina todos los tipos
 e.dataTransfer.clearData("text"); // elimina solo el tipo 'text'
 ```
 
+## dropEffect
+
+Obtiene el tipo de operacion de transferencia de los ficheros:
+
+- copy
+- link
+- move
+- none
+
+## effectAllowed
+
+Obtiene todos los tipos de operaciones de transferencia disponibles.
+
+- copy, copyLink
+- link, linkMove
+- move
+- all
+- uninitialized
+
 # Drop files from system
+
+Cuando arrastramos ficheros podemos utilizar las propiedades para obtener informacion sobre ellos.
+
+## items
+
+Contiene un objeto `DataTransferItemList` con una lista de los ficheros arrastrados.
+
+```js
+// Usar la interfaz DataTransferItemList para acceder a el/los archivos)
+for (let i = 0; i < ev.dataTransfer.items.length; i++) {
+  // Si los elementos arrastrados no son ficheros, rechazarlos
+  if (ev.dataTransfer.items[i].kind === "file") {
+    const file = ev.dataTransfer.items[i].getAsFile();
+    console.log(file.name);
+  }
+}
+```
+
+## files
+
+Contiene una lista de los ficheros locales disponibles en la transferencia de archivos.
+
+```js
+// Usar la interfaz DataTransfer para acceder a el/los archivos
+for (let i = 0; i < ev.dataTransfer.files.length; i++) {
+  const file = ev.dataTransfer.files[i].name;
+  console.log(file.name);
+}
+```

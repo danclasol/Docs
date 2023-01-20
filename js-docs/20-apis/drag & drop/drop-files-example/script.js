@@ -20,7 +20,7 @@ dropZone.addEventListener("drop", (ev) => {
   } else {
     // Usar la interfaz DataTransfer para acceder a el/los archivos
     for (let i = 0; i < ev.dataTransfer.files.length; i++) {
-      const file = ev.dataTransfer.files[i].name;
+      const file = ev.dataTransfer.files[i];
       const li = document.createElement("li");
 
       li.appendChild(document.createTextNode(file.name));
