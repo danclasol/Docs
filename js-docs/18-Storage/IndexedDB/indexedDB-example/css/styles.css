@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background-color: #333;
+  font-family: sans-serif;
+  color: white;
+  user-select: none;
+}
+
+.container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.videogame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.5rem;
+  border-top: 1px solid white;
+}
+
+.videogame:last-child {
+  border-bottom: 1px solid white;
+}
+
+.actions {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.button {
+  background: orangered;
+  border: none;
+  padding: 0.2rem 0.8rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button--ghost {
+  background-color: transparent;
+  color: orangered;
+  border: 1px solid orangered;
+}
