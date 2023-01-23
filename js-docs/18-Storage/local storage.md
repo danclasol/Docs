@@ -3,7 +3,7 @@
 Does the same thing as sessionStorage, but persists even when the browser is closed and reopened
 
 - Stores data with no expiration date, and gets cleared only through JavaScript, or clearing the Browser cache / Locally Stored Data.
-- Storage limit is the maximum amongst the two.
+- Storage limit is the maximum amongst the two. (10MB)
 
 ## `setItem()`
 
