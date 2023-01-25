@@ -43,6 +43,15 @@ console.log(myArray);
 console.log(myArray[0]); // Devuelve la primera posicion del array
 ```
 
+Recuperar aletoriamente un item del array
+
+```js
+const numbers = [2, 4, 6, 1, 1, 2];
+const randomIndex = Math.floor(Math.random() * numbers.length);
+const randomNumber = numbers[randomIndex];
+console.log(randomNumber);
+```
+
 # Modify array elements
 
 ```js

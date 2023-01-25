@@ -154,6 +154,14 @@ const objs = [
 console.log(objs.sort((a, b) => (a.name > b.name ? 1 : -1)));
 ```
 
+Ordenar una rray de forma aleatoria
+
+```js
+const numbers = [2, 4, 6, 1, 8, 10];
+numbers.sort(() => Math.random() - 0.5);
+console.log(numbers); // [6,8,10,1,4,2]
+```
+
 # some
 
 Comprueba si al menos un elemento del array cumple la condición del callback
