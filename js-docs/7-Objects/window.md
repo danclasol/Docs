@@ -66,3 +66,27 @@ go(n | -n);
 
 length;
 ```
+
+# matchMedia()
+
+Method that returns a new `MediaQueryList` object that can then be used to determine if the document matches the media query string, as well as to monitor the document to detect when it matches (or stops matching) that media query.
+
+```js
+window.matchMedia(mediaQueryString);
+```
+
+## Check if viewport matches
+
+```js
+let mql = window.matchMedia("(max-width: 600px)");
+
+if (mql.matches) console.log("This is a narrow screen — less than 600px wide.");
+```
+
+## Observe viewport changes
+
+Add an event listener to listen for changes in the viewport.
+
+```js
+mql.addEventListener("change", (e) => console.log(e.matches));
+```
