@@ -84,7 +84,7 @@ const bigNumber = 482598752875287528533n; // 482598752875287528533n (El mismo)
 
 Cuando trabajamos con datos numéricos, es posible que ciertos números no se puedan representar exactamente, y no sean tan precisos como nos gustaría. Esto ocurre porque se guardan en un formato llamado coma flotante de doble precisión.
 
-![numeric_safe_range](/js-docs//4-Numbers//safe-integer.png)
+![numeric_safe_range](/js-docs//4-Numbers//images//safe-integer.png)
 
 Fíjate en la gráfica de color inferior:
 
