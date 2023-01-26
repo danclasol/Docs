@@ -103,8 +103,11 @@
 
 ## 16. Http
 
-- Http protocol
-- Http methods
+- Http
+- Headers
+- Request Methods
+- Status Response Codes
+- XMLHttpReques
 - Fetch
 - Abort requests
 
