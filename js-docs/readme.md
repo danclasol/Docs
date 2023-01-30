@@ -39,7 +39,12 @@
 - Iterable objects
 - Generator functions
 
-## 7. Objects
+## 7. Collections
+
+- Map
+- Set
+
+## 8. Objects
 
 - Objects
 - Methods
@@ -47,22 +52,22 @@
 - Iterators
 - Destructuring
 
-## 8. Classes
+## 9. Classes
 
 - Classes
 - Inheritance
 
-## 9. Control structures
+## 10. Control structures
 
 - if...else
 - Loops
 - Switch
 
-## 10. POO
+## 11. POO
 
 - Classes
 
-## 11. Operators
+## 12. Operators
 
 - Assignment operators
 - Comparison operators
@@ -75,33 +80,33 @@
 - Spread operator
 - Others operators
 
-## 12. DOM
+## 13. DOM
 
 - DOM
 - DOM manipulation
 - DOM selectors
 
-## 13. Events
+## 14. Events
 
 - Events
 - Event bubbling
 - Event default behaviour
 - Online & Offline events
 
-## 14. Exceptions
+## 15. Exceptions
 
 - Exceptions
 - Errors
 - Custom error
 
-## 15. Asynchronous
+## 16. Asynchronous
 
 - Asynchronous
 - Callback
 - Promises
 - Async await
 
-## 16. Http
+## 17. Http
 
 - Http
 - Headers
@@ -111,12 +116,12 @@
 - Fetch
 - Abort requests
 
-## 17. Dates
+## 18. Dates
 
 - Dates
 - Methods
 
-## 18. Storage
+## 19. Storage
 
 - Storage
 - Local storage
@@ -124,17 +129,17 @@
 - Cookies
 - IndexedDB
 
-## 19. Files
+## 20. Files
 
 - File reader
 - Blob
 - JSON
 
-## 20. Timers
+## 21. Timers
 
 - Timers
 
-## 21. APIs
+## 22. APIs
 
 - Drag & drop
 - Geolocation
