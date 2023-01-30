@@ -1,3 +1,5 @@
+# Automatic semicolon insertion
+
 Js tiene una serie de reglas para la ASI (Automatic Semicolon Insertion)
 
 Estas determinan a la hora de interpetrar nuestro código, cuando JS pone un `;` en tiempo de ejecución y cuando no
