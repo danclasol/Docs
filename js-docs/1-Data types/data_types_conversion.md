@@ -1,19 +1,35 @@
-# Funcionamiento tipos en JS
+# Funcionamiento de tipos en JS
 
-- En Lenguajes fuertemente tipados, no se pueden realizar operaciones entre distintos tipos
-- En JS al ser de tipado dinamico si se puede, en JS se va a intentar convertir los 2 tipos en uno comun y realizar la operacion
-- JS determina que el tipo comun es String
+Javascript es un lenguaje dinámico y de tipado débil (o no tipado).
 
-Por ejemplo, si intentamos sumar un string con un numero, JS por defecto los trata ambos como cadena.
+## Dinámico
+
+Los lenguajes de tipado dinámicos son aquellos donde el tipo se asigna a las variables durante el tiempo de ejecución basandose en su valor en ese momemnto.
+
+Esto significa que se pueden cambiar los tipos de las variables en tiempo de ejecución.
+
+```js
+let string = "Hello";
+string = 2;
+typeof string; // number
+```
+
+## Tipado débil
+
+En lenguajes de tipado débil o blando o no tipados, las variables son declaradas sin ningún tipo y los valores pueden modificarse, compararse y operar entre ellos sin necesidad de realizar una conversion previa.
+
+Por lo que en JS, al ser de tipado dinamico si se puede, el interprete va a intentar convertir los 2 tipos en uno comun y realizar la operacion. Considerando `string` como el tipo comun en JS.
+
+Por ejemplo, si intentamos sumar un string con un numero, por defecto los trata ambos como cadena.
 
 ```js
 console.log("2" + 2); // 22
 ```
 
-Sin embargo, si intentamos multiplicar, como los string no tienen la operacion \*, esta vez los trata como tipo comun un numero, ya que el operador \* esta destinado para numeros.
+Sin embargo, si intentamos multiplicar, como los `string` no tienen la operacion \*, esta vez los trata como tipo comun un numero, ya que el operador \* esta destinado para numeros.
 
 ```js
-console.log("2" + 2); // 4
+console.log("2" * 2); // 4
 ```
 
 # Conversion Implicita

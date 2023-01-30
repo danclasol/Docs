@@ -1,16 +1,19 @@
 # Tipos primitivos
 
-En Javascript existen dos tipos de datos: primitivos y objetos.
+En Javascript existen dos tipos de datos: **primitivos** y **objetos**.
 
-Los primitivos representan un dato en la implementación más baja posible, es decir, son la manera más básica de representar un dato.
+Los **primitivos** representan un dato en la implementación más baja posible, es decir, son la manera más básica de representar un dato.
 
-Se diferencian con los objetos en que:
+Se diferencian con los **objetos** en que:
 
+- **Son inmutables**. Esto quiere decir que si cambiamos el valor a un primitivo, al ser esta la forma más basica de representar un dato, realmente no lo mutamos si no que lo convertimos en otro primitivo.
 - Cuando se crea una variable no se guarda por referencia
-- Las variables se pasan por valor
+- Las variables se pasan por valor en funciones
 - Las comparaciones se hacen por valor
 
-## String
+Existen 7 tipos primitivos:
+
+## _String_
 
 Valor de texto (cadenas de texto, carácteres, etc...)
 
@@ -88,9 +91,9 @@ console.log("undefined", indefinido1, indefinido2);
 
 # Objects Types
 
-A diferencia de los tipos primitivos, los objetos son almacenados y copiados por referencia.
+A diferencia de los tipos **primitivos**, los **objetos** son almacenados y copiados por referencia.
 
-Los objetos serían todos lo demás.
+Todo lo que no sea un tipo primitivo sera un objeto:
 
 - Objetos, arrays
 - Map, Set
@@ -125,6 +128,21 @@ Como podemos ver, el primitivo de string no es lo mismo que usar el objeto Strin
 true === new Boolean(true); // false
 ```
 
+## Function object
+
+En Js, las funciones se llaman `function objects` porque son objetos especiales, los cuales cuentan con propiedades y métodos especiales.
+
+Pueden ser almacenadas en una variable o array y pueden recibir parametros.
+
+```js
+function message() {
+  console.log("Greetings!");
+}
+
+console.log(typeof message); // => function
+console.log(message instanceof Object); // => true
+```
+
 # typeof
 
 Función que devuelve el tipo de datos de la variable que le pasemos como parametro.
@@ -133,8 +151,9 @@ Función que devuelve el tipo de datos de la variable que le pasemos como parame
 console.log("typeof hola", typeof "hola"); // string
 console.log("typeof 5", typeof 5); // number
 console.log("typeof true", typeof true); // boolean
-console.log("typeof undefined", typeof undefined); // undefined
+console.log("typeof Symbol", typeof Symbol()); // symbol
 console.log("typeof null", typeof null); // devuelve object
+console.log("typeof undefined", typeof undefined); // undefined
 console.log("typeof {}", typeof {}); // devuelve object
 console.log("typeof []", typeof []); // devuelve object
 console.log("typeof function", typeof function () {}); // devuelve function
