@@ -40,7 +40,10 @@ console.log(myArray);
 # Access to array elements
 
 ```js
-console.log(myArray[0]); // Devuelve la primera posicion del array
+myArray[0]; // Devuelve la primera posicion del array
+myArray.at(0); // Devuelve la primera posicion del array
+myArray.at(-1); // Devuelve la ultima posicion del array
+myArray.at(-2); // Devuelve la penultima posicion del array
 ```
 
 Recuperar aletoriamente un item del array
