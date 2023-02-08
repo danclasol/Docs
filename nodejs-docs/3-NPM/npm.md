@@ -66,3 +66,4 @@ Hay que tener en cuenta que si una librería tiene alguna dependencias con otra 
 Existen alterntivas a `npm`, las mas conocidas son las siguientes:
 
 - YARN
+- pnpm

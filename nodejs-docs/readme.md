@@ -11,21 +11,34 @@
 - Console
 - Process
 
-## 3. Modules
+## 3. Npm
 
-## 4. Asynchronous
+- Npm
+- Dependencies
+- Versions
+- Update dependencies
+- Scripts
 
-## 5. Events
+## 4. Modules
 
-## 6. File system
+- Modules
+- CommonJS
+- ECMAScript
+- Intercompatibility between CJS and ESM
 
-## 7. Http
+## 5. Asynchronous
 
-## 8. ExpressJs
+## 6. Events
 
-## 9. Validations and DTOS
+## 7. File system
 
-## 10. Debugger
+## 8. Http
+
+## 9. ExpressJs
+
+## 10. Validations and DTOS
+
+## 11. Debugger
 
 ## 98. Utils
 
@@ -33,6 +46,11 @@
 - Readline
 
 ## 99. Development Tools
+
+- Projects
+
+  - Code Formaters
+  - Path alias
 
 - Visual Studio Code
   - Plugins
