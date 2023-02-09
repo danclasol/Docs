@@ -2,12 +2,25 @@
 
 Son unos de los tipos de datos básicos (tipos primitivos), que, para crearlos, simplemente basta con escribirlos literalmente.
 
-```js
-const number1 = 4;
-const number2 = 2;
-const number3 = -2;
-const number4 = 1e25;
-```
+Un `number` puede tener 3 posibles valores:
+
+- Numerico: numero entero, decimal, negativo, etc
+  ```js
+  const number1 = 4;
+  const number2 = 2;
+  const number3 = -2;
+  const number4 = 1e25;
+  ```
+- _NaN_ (Not a Number): representa la ausencia de valor numerico. typeof devuelve number
+  ```js
+  const notANumber = NaN;
+  typeof NaN; // number
+  ```
+- _Infinity_: refresenta el infinito
+  ```js
+  const infinite = Infinity;
+  typeof Infinity; // number
+  ```
 
 Tambien se puede declarar numberos con la notación `new`, aunque no es recomendable, ya que es bastante tedioso y complicado.
 
