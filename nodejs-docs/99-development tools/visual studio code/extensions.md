@@ -6,16 +6,17 @@
 
 ## Thunder Client
 
-- Cliente para hacer peticiones HTTP desde Visual Studio Code
+- Cliente para hacer peticiones _HTTP_ desde Visual Studio Code
 
 ## Material Icon Theme
 
 - Iconos de ficheros mas bonitos
+- Preferences > Settings > Extensions > Material Icon
 
 ## Monokay vibrant
 
 - Color de fuente mas llamativo
 
-## version lens
+## Version lens
 
-- Mostrar visualmente en el package.json si tenemos la version mas reciende de una libreria
+- Mostrar visualmente en el `package.json` si tenemos la version mas reciende de una libreria
