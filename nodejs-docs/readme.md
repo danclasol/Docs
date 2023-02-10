@@ -53,4 +53,5 @@
   - Path alias
 
 - Visual Studio Code
-  - Plugins
+  - Extensions
+  - Settings
