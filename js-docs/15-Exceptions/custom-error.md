@@ -1,11 +1,27 @@
 # Custom errors
 
-Para crear nuestras propios clases de error, debemos extender la clase Error.
+Para crear nuestras propios clases de error, debemos extender la clase `Error`.
 
-Nuestra clase heredará las propiedades mensaje, nombre y la pila, pero podremos añadir más propiedades
+Nuestra clase heredará las propiedades mensaje, nombre y la pila, pero podremos añadir más propiedades.
 
 ```js
-class CustomError extends Error {}
+class CustomError extends Error {
+  constructor(message) {
+    super(message);
+  }
+}
+```
+
+Tambien podemos sobreescribir propiedades heredadas
+
+```js
+class CustomError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "MyCustomError";
+    this.stack = ""; // eliminar stack
+  }
+}
 ```
 
 Lanzar excepcion con nuestro error personalizado
