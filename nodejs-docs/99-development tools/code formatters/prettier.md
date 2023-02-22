@@ -120,6 +120,34 @@ Una vez instalada, en el fichero de configurar de ESLint `.eslintrc.cjs` en la p
 extends: ['standard', 'prettier']
 ```
 
+## Prettier con otros formatos
+
+En Visual Studio Code, podemos configurar por cada fichero que formateador queremos que se aplique.
+
+Abrimos el `settings.json` y añadimos los formatos que queramos configurar
+
+```json
+ "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+```
+
+## Organizar imports automaticamente
+
+Visual Studio Code tambien nos da la posilibidad de automáticamente ordenar los imports, y de eliminar import no usados.
+
+Para ello abrimos el `settings.json` y añadimos para cada formato que queramos configurar
+
+```json
+ "[javascript]": {
+    ...
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+    ...
+  },
+```
+
 # Extensiones utiles para Visual Studio Code
 
 ## Eslint (Verificada por Microsoft)

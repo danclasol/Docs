@@ -11,9 +11,9 @@
 - Console
 - Process
 
-## 3. Npm
+## 3. NPM
 
-- Npm
+- NPM
 - Dependencies
 - Versions
 - Update dependencies
@@ -47,11 +47,16 @@
 
 ## 99. Development Tools
 
-- Projects
+- Code formatters
 
-  - Code Formaters
-  - Path alias
+  - ESLint
+  - Prettier
+  - Lint-stage
 
 - Visual Studio Code
+
   - Extensions
   - Settings
+
+- Libraries
+- Path alias
