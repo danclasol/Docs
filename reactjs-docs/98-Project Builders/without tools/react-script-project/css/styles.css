@@ -1,0 +1,12 @@
+body {
+  background-color: #2a2a2a;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0;
+  overflow: auto;
+}
+
+.button {
+  background-color: tomato;
+  padding: 1rem;
+}
