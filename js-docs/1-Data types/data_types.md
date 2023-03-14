@@ -7,6 +7,11 @@ Los **primitivos** representan un dato en la implementación más baja posible, 
 Se diferencian con los **objetos** en que:
 
 - **Son inmutables**. Esto quiere decir que si cambiamos el valor a un primitivo, al ser esta la forma más basica de representar un dato, realmente no lo mutamos si no que lo convertimos en otro primitivo.
+  ```js
+  let a = "cadena";
+  a[0] = "T"; // No podemos mutarlo parcialmente
+  a = "T"; // Tenemos que cambiar el valor total
+  ```
 - Cuando se crea una variable no se guarda por referencia
 - Las variables se pasan por valor en funciones
 - Las comparaciones se hacen por valor
