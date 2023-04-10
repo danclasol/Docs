@@ -311,6 +311,11 @@ Validation will be triggered for the dependent inputs,it only limited to registe
 
 This function will receive the form data if form validation is successful.
 
+## props
+
+- `SubmitHandler` (data: Object, e?: Event): A successful callback.
+- `SubmitErrorHandler` (errors: Object, e?: Event): An error callback.
+
 Manages for us the submit form method:
 
 - Avoid preventDefault form event
