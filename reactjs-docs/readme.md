@@ -24,6 +24,42 @@
 - useState
 - Rules
 
+# 5. Events
+
+- Events
+- Events bubbling
+
+# 6. Forms
+
+- Forms events
+- Forms libraries
+- React-hook-form
+
+# 7. Context
+
+- Prop drilling
+- Context
+- Context vs prop drilling
+
+# 8. useEffect
+
+- Side Effects
+- useEffect
+- Usage
+
+# 9. useReducer
+
+- useState vs useReducer
+- useReducer
+
+# 10. useRef
+
+- useRef
+- reference DOM Elements
+- forwardRef
+- useImperativeHandle
+- usage
+
 # 99. Project Builders
 
 - Linters and formatters
