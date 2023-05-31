@@ -60,6 +60,11 @@
 - useImperativeHandle
 - usage
 
+# 11. Portals
+
+- Portals
+- CustomEvents
+
 # 99. Project Builders
 
 - Linters and formatters
