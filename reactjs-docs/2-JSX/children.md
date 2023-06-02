@@ -50,3 +50,82 @@ Por lo que segun que le pasemos como children puede pasar lo siguiente:
   todo el contenido del array
 
 - `{['R',null,'A',undefined,'T',true]}` -> en este array, los null, undefined y true no se renderizaran.
+
+# Methods Children
+
+El objeto `Children` cuenta con una serie de métodos que permite manipular y transformar el JSX recibido en la prop `children`.
+
+_No es recomendables usarlos_. Son métodos que eran utiles en versiones antiguas de React, pero que con las nuevas funcionalidades han hecho que queden deprecadas.
+
+## Children.count(children)
+
+Devuelve el numero de hijos.
+
+```js
+const RowList = ({ children }) => {
+  return (
+    <>
+      <h1>Total rows: {Children.count(children)}</h1>
+      ...
+    </>
+  );
+};
+```
+
+## Children.only(children)
+
+Comprueba si el `children` es un solo elemento. Devuelve el elemento si se cumple.
+
+```js
+const Box = ({ children }) => {
+  const element = Children.only(children);
+  // ...
+```
+
+## Children.toArray(children)
+
+Transofmra el objeto `children` en un array de JS.
+
+```js
+const ReversedList = ({ children }) => {
+  const result = Children.toArray(children);
+  result.reverse();
+
+  return result;
+};
+```
+
+## Children.forEach(children, fn, thisArg?)
+
+Similar to `Array.forEach`.
+
+Por cada elemento de `children`, ejecuta la función.
+
+```js
+const SeparatorList = ({ children }) => {
+  const result = [];
+
+  Children.forEach(children, (child, index) => {
+    result.push(child);
+    result.push(<hr key={index} />);
+  });
+  // ...
+```
+
+## Children.map(children, fn, thisArg?)
+
+Similar to `Array.map`.
+
+Devuelve un array con los elementos de `children` transformados.
+
+```js
+const RowList = ({ children }) => {
+  return (
+    <div className="list">
+      {Children.map(children, (child) => (
+        <div className="row">{child}</div>
+      ))}
+    </div>
+  );
+};
+```
