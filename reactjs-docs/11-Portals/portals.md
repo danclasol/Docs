@@ -6,9 +6,23 @@ Nos permiten transportarnos a cualquier parte de nuestro _DOM_ y renderizar alli
 
 Nos permiten incluso renderizar _jsx_ fuera del `div=root` en el que renderizamos nuestra aplicacion.
 
-## Create Portal
+## createPortal
 
-Creamos el nodo donde se ubicará el portal.W
+### Parameters
+
+- children: Anything that can be rendered with React, such as a piece of JSX (e.g. <div /> or <SomeComponent />), a Fragment (<>...</>), a string or a number, or an array of these.
+
+- domNode: Some DOM node, such as those returned by document.getElementById().
+
+  - The node must already exist. Passing a different DOM node during an update will cause the portal content to be recreated.
+
+- key (optional): identificador unico para el portal.
+
+```js
+createPortal(children, domNode, key?)
+```
+
+Creamos el nodo donde se ubicará el portal.
 
 ```html
 <body>
