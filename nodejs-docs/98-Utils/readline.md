@@ -43,3 +43,16 @@ When called, the 'close' event will be emitted.
 ```js
 consoleInterface.close();
 ```
+
+## emitKeypressEvents()
+
+Metodo que provoca que el _stream_ pasado por parametro empieze a emitir eventos de 'keypress'.
+
+### Parameters
+
+- stream
+- interface
+
+```js
+consoleInterface.emitKeypressEvents(readStream);
+```
