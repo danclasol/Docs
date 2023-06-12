@@ -17,8 +17,8 @@ npm update
 Una vez ejecutado este comando puede ocurrir varias cosas:
 
 - No hay ninguna actualización para la dependencia. No se actualiza la version.
-- Encuentra una actualizacion no conflictiva. Se actualiza la version automáticamente.
-- Encuentra una actualización que puede producir un comflicto.
+- Encuentra una actualizacion no conflictiva (_Minor update_). Se actualiza la version automáticamente.
+- Encuentra una actualización que puede producir un conflicto (_Major update_).
 
 # Herramientas
 
@@ -73,7 +73,7 @@ Este comando permite varios argumentos:
   De esta manera, en el `package.json`, quedará fijada esta version actualizada.
 
   ```
-  npm-check -u - E
+  npm-check -u -E
   ```
 
 # version lens
