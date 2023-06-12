@@ -28,22 +28,45 @@
 
 ## 5. Asynchronous
 
+- Asynchronous
+- Asynchronism vs synchronism
+- Asynchronous task types
+- JS Engine
+
 ## 6. Events
 
-## 7. File system
+- EventEmitter
 
-## 8. Http
+## 7. Buffers & Streams
 
-## 9. ExpressJs
+- Buffer
+- Streams
+- Readable Stream
+- Writeable Stream
+- Duplex Stream
+- Transform Stream
+- Backpressure
 
-## 10. Validations and DTOS
+## 8. File system
 
-## 11. Debugger
+- File system
+- File Paths
+- Promise API
+- fs-extra
+
+## 9. Http
+
+## 10. ExpressJs
+
+## 11. Validations and DTOS
+
+## 12. Debugger
 
 ## 98. Utils
 
 - Util
 - Readline
+- Zlib
 
 ## 99. Development Tools
 
