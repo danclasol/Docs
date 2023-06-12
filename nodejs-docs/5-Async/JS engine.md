@@ -4,7 +4,7 @@ Se encarga de convertir código escrito en lenguaje Javascript en código ejecut
 
 Cada navegador tiene su propio motor para compilar e interpretar JavaScript:
 
-- `V8 Enmgine`: usado navegadores basados en Chromium (Chrome, Microsoft Edge, Opera)
+- `V8 Engine`: usado navegadores basados en Chromium (Chrome, Microsoft Edge, Opera)
 - `SpiderMonkey` : Mozilla Firefox
 - `JavaScriptCore`: usado en navegadores basados en Webkit (Safari).
 - `Carakan`: (versiones antiguas de Opera).

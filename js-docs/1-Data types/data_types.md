@@ -18,7 +18,7 @@ Se diferencian con los **objetos** en que:
 
 Existen 7 tipos primitivos:
 
-## _String_
+## String
 
 Valor de texto (cadenas de texto, carácteres, etc...)
 
@@ -123,9 +123,9 @@ bool.valueOf();
 
 Sin embargo, lo que ocurre es que JavaScript hace una coerción del primitivo automáticamente y crea una instancia del objeto String, sin necesidad que lo debas hacer tú manualmente.
 
-Esto pasa con String, Number, Boolean pero no con null, undefined, Symbol y BigInt.
+Esto pasa con _String_, _Number_, _Boolean_ pero no con _null_, _undefined_, _Symbol_ y _BigInt_.
 
-Como podemos ver, el primitivo de string no es lo mismo que usar el objeto String.
+Como podemos ver, el primitivo de string no es lo mismo que usar el objeto _String_.
 
 ```js
 "hello" === new String("hello"); // false
