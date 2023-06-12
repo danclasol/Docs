@@ -64,3 +64,31 @@ objeto.toString(); // Devuelve "[object Object]" (representación textual de un 
 const number = 42; // Tipo Number
 number.toString(); // Devuelve "42"
 ```
+
+# Object.is()
+
+Determina si 2 valores tienen el mismo valor.
+
+Se diferencia del operador `===` en como trata los ceros y los _NaN_
+
+```js
+console.log(Object.is("1", 1)); // false
+console.log(Object.is(NaN, NaN)); // true
+console.log(NaN === NaN); // false
+console.log(Object.is(-0, 0)); // false
+console.log(-0 === 0); // true
+console.log(Object.is(-1, 1)); // false
+console.log(-1 === 1); // false
+```
+
+Los objetos tendran el mismo valor, si tienen la misma referencia de memoria.
+
+```js
+const obj1 = {};
+const obj2 = {};
+console.log(Object.is(obj1, obj2)); // false
+
+const obj1 = {};
+const obj2 = obj1;
+console.log(Object.is(obj1, obj2)); // true
+```
