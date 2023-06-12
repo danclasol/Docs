@@ -131,6 +131,8 @@ console.log(found); // OUTPUT: 12
 
 Ordena los elementos de un array alfabéticamente(valor Unicode)
 
+Muta el array original.
+
 ```js
 const letters = ["b", "c", "z", "a"];
 console.log(letters.sort());
@@ -215,4 +217,25 @@ const array = [1, 2, 3, 4, 5];
 const myArray = array.slice(1, 3); // [2,3]
 
 console.log("slice", myArray);
+```
+
+# join
+
+Une todos los elementos de una matriz (o un objeto similar a una matriz) en una cadena y devuelve esta cadena.
+
+```js
+const elements = ["Fire", "Air", "Water"];
+
+console.log(elements.join()); // "Fire,Air,Water"
+```
+
+# toSorted
+
+Devuelve una nuevo array con los elementos ordenados.
+
+Se diferencia del metodo `sort` en que no muta el array original.
+
+```js
+const letters = ["b", "c", "z", "a"];
+const lettersSorted = letters.toSorted(); // el array letter no muta
 ```
