@@ -93,7 +93,7 @@ for (const prop in obj) {
 const array = ["Banana", "Apple", "Orange"];
 array.food = "Pizza";
 
-for (const property of object) {
+for (const property in object) {
   console.log(`${property}: ${object[property]}`);
 }
 
