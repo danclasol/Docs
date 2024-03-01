@@ -2,7 +2,9 @@
 
 Son unos de los tipos de datos básicos (tipos primitivos), que, para crearlos, simplemente basta con escribirlos literalmente.
 
-Un `number` puede tener 3 posibles valores:
+En JS, no existe distincion entre números enteros y decimales, todos son de tipo `number`.
+
+Pueden tener 3 posibles valores:
 
 - Numerico: numero entero, decimal, negativo, etc
   ```js
@@ -42,37 +44,62 @@ const number = -5_000_0000;
 5_000_000 === 5000000; // true
 ```
 
-# Operaciones
-
-```js
-console.log("Sumar", numero1 + numero2);
-console.log("Restar", numero1 - numero2);
-console.log("Modulo", numero1 % numero2); // Devuelve el resto de la divison
-```
-
 # Operators
 
 Todas estos pares dan el mismo resultado
 
+## Suma `+`
+
 ```js
 number1 = numero1 + 2;
 number1 += 2;
+```
 
+## Resta `-`
+
+```js
 number1 = numero1 - 2;
 number1 -= 2;
+```
 
+## Multiplicación `*`
+
+```js
 number1 = numero1 * 2;
 number1 *= 2;
+```
 
+## Division `/`
+
+```js
 number1 = numero1 / 2;
 number1 /= 2;
+```
 
+## Módulo (resto division) `%`
+
+```js
 number1 = numero1 % 2;
 number1 %= 2;
+```
 
+## Exponente `**`
+
+```js
+number1 = numero1 ** 2;
+number1 ** 2;
+```
+
+## Incremento `++`
+
+```js
 number1 = numero1 + 1;
 number1++;
+```
 
+## Decremento `--`
+
+```js
 number1 = numero1 - 1;
 number1--;
 ```
