@@ -2,7 +2,11 @@
 
 ## Operador lógico AND
 
-Devuelve el primer valor si es `false`, o el segundo valor si el primero es `true`. `a && b`
+Devuelve el primer valor si es `false`, o el segundo valor si el primero es `true`.
+
+```js
+a && b;
+```
 
 Es decir, devuelve `b` si `a` y `b` son verdaderos, sino `a`.
 
@@ -39,7 +43,11 @@ numero > 0 ? "Positivo" : "Negativo";
 
 # Operador lógico OR
 
-Devuelve el primer valor si es `true`, o el segundo valor si el primero es `false`. `a || b`
+Devuelve el primer valor si es `true`, o el segundo valor si el primero es `false`.
+
+```js
+a || b;
+```
 
 Es decir, devuelve `a` si es verdadero, o si no, `b`
 
