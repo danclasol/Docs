@@ -146,6 +146,51 @@ enum ContractStatus {
 }
 ```
 
+## Declare enum using modifier `const`
+
+When we use `const enum`, _TypeScript_ does not genereated any JavaScript code for the enum at runtime. It directly substitutes the enum values with their literal values during compilation process.
+
+This can lead to more efficient code, as there is no runtime overhead for enum.
+
+For example, this _TypeScript_ code would be compiled diffently if we use `const` or not
+
+```ts
+const enum Direction {
+  Up = "UP",
+  Down = "DOWN",
+  Left = "LEFT",
+  Right = "RIGHT",
+}
+```
+
+No JavaScript code is generated for the const enum. It is recommended to use it when the benefits of compile-time optimization outweigh these limitations.
+
+```js
+// No JavaScript code is generated for the const enum.
+```
+
+And when you use the enum without `const`:
+
+```ts
+enum Direction {
+  Up = "UP",
+  Down = "DOWN",
+  Left = "LEFT",
+  Right = "RIGHT",
+}
+```
+
+In this case, it created an object for the enum and it would be possible to use reverse mapping or dynamically access enum values at runtime.
+
+```js
+var ContractStatus;
+(function (ContractStatus) {
+  ContractStatus[(ContractStatus["Permanent"] = 0)] = "Permanent";
+  ContractStatus[(ContractStatus["Temp"] = 1)] = "Temp";
+  ContractStatus[(ContractStatus["Apprentice"] = 2)] = "Apprentice";
+})(ContractStatus || (ContractStatus = {}));
+```
+
 # void
 
 `void` represents the absence of having any type of data. It is the opposite of the `any` type.
