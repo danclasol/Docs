@@ -37,3 +37,10 @@
 - Readonly properties
 - Static properties
 - Interface Contract
+
+## 6. Generics
+
+- Generics
+- Generic Contraints
+- Generic Class
+- Generic Interface
