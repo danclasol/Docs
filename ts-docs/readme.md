@@ -32,11 +32,12 @@
 ## 5. Classes
 
 - Classes
-- Inheritance
 - Access modifiers
 - Readonly properties
 - Static properties
+- Inheritance
 - Interface Contract
+- Abstract classes
 
 ## 6. Generics
 
