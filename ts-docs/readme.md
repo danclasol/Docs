@@ -22,6 +22,7 @@
 
 - Functions
 - Function parameter types
+- Function Overloadings
 
 ## 4. Interfaces
 
