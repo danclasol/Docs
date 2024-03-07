@@ -41,3 +41,13 @@ Or in a JSON file named _tsconfig.json_.
 ```
 
 Numerous compiler options are available. (https://www.typescriptlang.org/docs/handbook/compiler-options.html).
+
+## `noImplicitAny`
+
+Enable error reporting for expressions and declarations with an implied any type.
+
+By default is true if strict, or false otherwise.
+
+## `outfile`
+
+Specify a file that bundles all outputs into one _JavaScript_ file. If declaration is _true_, also designates a file that bundles all `.d.ts` output.
