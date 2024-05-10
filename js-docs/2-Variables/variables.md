@@ -16,7 +16,7 @@ var test = 0;
 
 ## let
 
-Varibales `let` pueden ser modificadas. No es obligatorio asignar valor al declararse.
+Las variables `let` pueden ser modificadas. No es obligatorio asignar valor al declararse.
 
 Si no especificamos un valor, la variable tendra un valor `undefined`
 
@@ -26,10 +26,10 @@ let test = "abc";
 
 ## const
 
-Varibales `const` NO pueden ser modificadas, además es obligatorio asignar un valor al declararse
+Las variables `const` NO pueden ser modificadas, además es obligatorio asignar un valor al declararse
 
 ```js
-const test = [1, 2, 3];
+const PI = 3.1415;
 ```
 
 # Ambito de variables
@@ -61,9 +61,10 @@ Vemos que utilizando `let` la variable `p` sólo existe dentro del bucle, ámbit
 - No usar nunca `var`. Esta obsoleto
 - Por defecto usar `const`. Si no se va a modificar el valor utilizar siempre `const`.
 - Escribir los nombres de las variables en `camelCase`
-- Utilizar mayusculas para constantes de calculo como por ejemplo numero PI, IVA, etc. En este caso, usar '\_' en vez de camelCase
+- Utilizar mayusculas para constantes de calculo como por ejemplo numero PI, IVA, etc. En este caso, usar '\_' en vez de camelCase.
+- Usar nombres de variables descriptivos.
 
-# Ejemplo
+# Ejemplos
 
 Ejemplo declarando variables y constantes
 
