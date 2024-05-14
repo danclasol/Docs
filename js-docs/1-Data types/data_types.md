@@ -70,7 +70,7 @@ Symnbol() == Symbol(); // false
 
 ## null
 
-Representa un valor nulo o vacío
+Representa un valor nulo o vacío.
 
 ```js
 const nulo = null;
@@ -82,16 +82,26 @@ Aunque `null` sea un tipo primitivo, la función `typeof` devuelve que es un `ob
 console.log("typeof null", typeof null); // devuelve object
 ```
 
+Por lo que para comprobar si una variable es `null`, debemos usar la comparacion estricta `===`
+
 ## undefined
 
-Valor sin definir (variable sin inicializar)
+Valor sin definir (variable sin inicializar).
+
+Por ejemplo, si creamos una variable sin asignarle ningún valor:
 
 ```js
-const indefinido1 = undefined;
-let indefinido2;
+let indefinido;
 
-console.log("null", nulo);
-console.log("undefined", indefinido1, indefinido2);
+console.log("indefinido", indefinido); // undefined
+```
+
+O podemos asignarle directamente el valor `undefined`:
+
+```js
+const indefinido = undefined;
+
+console.log("indefinido", indefinido);
 ```
 
 # Objects Types
@@ -146,20 +156,4 @@ function message() {
 
 console.log(typeof message); // => function
 console.log(message instanceof Object); // => true
-```
-
-# typeof
-
-Función que devuelve el tipo de datos de la variable que le pasemos como parametro.
-
-```js
-console.log("typeof hola", typeof "hola"); // string
-console.log("typeof 5", typeof 5); // number
-console.log("typeof true", typeof true); // boolean
-console.log("typeof Symbol", typeof Symbol()); // symbol
-console.log("typeof null", typeof null); // devuelve object
-console.log("typeof undefined", typeof undefined); // undefined
-console.log("typeof {}", typeof {}); // devuelve object
-console.log("typeof []", typeof []); // devuelve object
-console.log("typeof function", typeof function () {}); // devuelve function
 ```
