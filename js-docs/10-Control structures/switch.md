@@ -25,6 +25,54 @@ switch (expr) {
 }
 ```
 
+# Grouping cases
+
+We can group _cases_ to avoid repeating the same code for diferentes _cases_.
+
+```js
+const day = new Date().getDay();
+
+switch (day) {
+  case 0:
+  case 6:
+    console.log("Today is weekend!");
+    break;
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+    console.log("Work Day!");
+    break;
+  case 5:
+    console.log("It's Friday!");
+    break;
+}
+```
+
+# switch(true)
+
+We can ignore the value of the expression passed to the `switch` to evaluate conditions in every case.
+
+This is an advanced alternative to `if...else`, it is not very common but is posible to use it.
+
+```js
+let age = 25;
+
+switch (true) {
+  case age >= 18 && age < 25:
+    console.log("Young");
+    break;
+  case age >= 25 && age < 40:
+    console.log("Mature");
+    break;
+  case age >= 40:
+    console.log("Elder");
+    break;
+  default:
+    console.log("Child");
+}
+```
+
 # Problemas de switch
 
 Esta estructura de control no esta del todo optimizada para usarse con JS. Por lo que es recomendable intentar evitar su uso.

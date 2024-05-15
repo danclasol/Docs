@@ -59,7 +59,9 @@ do {
 
 The `for` statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.
 
-The following `for` statement starts by declaring the variable `i` and initializing it to 0. It checks that `i` is less than lenght of the `array`, performs the two succeeding statements, and increments `i` by 1 after each pass through the loop.
+- _initialization_: declare the variable `i`
+- _condition_: check `i` is less than lenght of the `array`
+- _actualization_: increments `i` by 1 after each pass through the loop.
 
 ```js
 for (let i = 0; i < array.length; i++) {
@@ -67,11 +69,38 @@ for (let i = 0; i < array.length; i++) {
 }
 ```
 
+We can use more than one variable
+
+```js
+for (let i = 0, j = 10; i < array.length; i++, j--) {
+  console.log(array[i]);
+}
+```
+
+We can also use the `break` and `continue`.
+
+```js
+for (let i = 0; i < 10; i++) {
+  const isEven = i % 2 === 0;
+  if (isEven) {
+    continue;
+  }
+
+  // Only show console.log if the number is even
+  console.log(i);
+
+  // Exit loop once we reach 7
+  if (i === 7) {
+    break;
+  }
+}
+```
+
 # for...in
 
 The `for...in` iterates over all enumerable properties of an object that are keyed by strings (ignoring ones keyed by Symbols), including inherited enumerable properties.
 
-The for...in loop below iterates over all of the object's properties and logs a string of the property names and their values.
+The `for...in` loop below iterates over all of the object's properties and logs a string of the property names and their values.
 
 ```js
 var obj = { a: 1, b: 2, c: 3 };
