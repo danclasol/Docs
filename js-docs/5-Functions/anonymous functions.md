@@ -1,6 +1,6 @@
 # Funciones anonimas
 
-Las funciones anónimas o funciones lambda son un tipo de funciones que se declaran sin nombre de función y se alojan en el interior de una variable y haciendo referencia a ella cada vez que queramos utilizarla.
+Las funciones anónimas o function expressions son un tipo de funciones que se declaran sin nombre de función y se alojan en el interior de una variable y haciendo referencia a ella cada vez que queramos utilizarla.
 
 ```js
 const saludarFunction = function (nombre, apellidos) {
@@ -47,4 +47,26 @@ Utilizamos la funcion anomina que muestra una alerta
 saludar(obtenerSaludo, alertSaludo);
 ```
 
-# Ambito this
+# Hoisting
+
+El _hoisting_ es un término que se usa para describir cómo _JavaScript_ parece que mueve las declaraciones funciones al principio del código, de forma que las puedes usar incluso antes de declararlas.
+
+En este caso, no se produce error al llamar a la funcion, debido a que _JavaScript_ durante la fase de compilación asigna en memoria las declaraciones de funciones. Por eso al ejecutarse el código tiene acceso a esa posicion de memoria a la que referiste la función.
+
+```js
+sum(1, 2); // 3
+
+function sum(a, b) {
+  return a + b;
+}
+```
+
+Sin embargo, si usamos una function expression, el hoisting no se aplica y si se produciría un error al llamar a la función.
+
+```js
+sum(1, 2); // ❌ ReferenceError: sum is not defined
+
+const sum = function (a, b) {
+  return a + b;
+};
+```
