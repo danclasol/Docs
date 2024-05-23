@@ -27,6 +27,7 @@
 ## 5. Functions
 
 - Functions
+- Parameters
 - Anonymous functions
 - Arrow functions
 
@@ -155,5 +156,5 @@
 
 ## 99. Sugar sintax
 
-- Shorthand sintax
+- Shorten sintax
 - Async await
