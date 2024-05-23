@@ -12,7 +12,7 @@ const duplicarOld = function (numero) {
 };
 ```
 
-# Sintaxis de las arrow functions
+# Sintaxis
 
 Ambas formas de escribir las funciones son equivalentes, obtienen el mismo resultado
 
@@ -36,7 +36,9 @@ const duplicarSimple = (numero) => {
 };
 ```
 
-Si la funcion solo tiene una linea, podemos obviar los corchetes y el return
+# Return implícito
+
+Las arrow functions poseen un `return` implicito, que permite devolver el valor de la expresión sin usar la palabra clave `return` cuando son de una sola línea.
 
 ```js
 const sumarMasSimple = (a, b) => a + b;
