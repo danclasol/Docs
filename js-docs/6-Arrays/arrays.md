@@ -46,6 +46,12 @@ myArray.at(-1); // Devuelve la ultima posicion del array
 myArray.at(-2); // Devuelve la penultima posicion del array
 ```
 
+Si intentamos acceder a un elemento que no existe, nos devolvera _undefined_
+
+```js
+myArray[99]; // Devuelve undefined
+```
+
 Recuperar aletoriamente un item del array
 
 ```js
