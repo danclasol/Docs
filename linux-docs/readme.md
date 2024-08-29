@@ -20,7 +20,7 @@
 
 - Directory Commands
 - File Commands
-- Links
+- Inodes
 
 ## 2. Redirections
 
@@ -65,9 +65,17 @@
 
 ## 9. Variables
 
+- Variables
+- Enviroment variables
+- Special variables
+- Variable PATH
+- Command Prompt
+- Variables configuration files
+
 ## 10. Packages
 
-- install commands
+- Packages
+- Install packages
 
 ## 98. Applications
 
