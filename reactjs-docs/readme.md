@@ -65,6 +65,12 @@
 - Portals
 - CustomEvents
 
+# 30. Optimizations
+
+- HOCs
+- Render Props
+- Flexible Rendering
+
 # 99. Project Builders
 
 - Linters and formatters

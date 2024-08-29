@@ -1,6 +1,6 @@
 # Prettier
 
-`Prettier` es un formateador de código que permite homogeneizar el código de nuetros proyectos obligandonos a utilizar el mismo formato en todo el proyecto o equipo.
+`Prettier` es un formateador de código que permite homogeneizar el código de nuestros proyectos obligandonos a utilizar el mismo formato en todo el proyecto o equipo.
 
 Cuando se trabaja en un proyecto en equipo con mas personas, es importante que todos usen el mismo tipo de formateador, evitando asi herramientas de version de controles (como Github), detecten cambios de formato de código como cambios de codigo (cambios fantasma).
 
