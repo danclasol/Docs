@@ -46,7 +46,7 @@ Metodo que lee el contenido de un fichero y lo almacena en un _buffer_.
 
 ```js
 const readBuffer = await fileHandle.read();
-console.log(fileReadBuffer.buffer.toString);
+console.log(fileReadBuffer.buffer.toString());
 ```
 
 ### `readv()`

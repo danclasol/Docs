@@ -56,11 +56,26 @@
 
 ## 9. Http
 
+- HTTP
+- API REST
+- Global URL
+- Node as Client
+- Node as Server
+
 ## 10. ExpressJs
+
+- ExpressJs
+- Routing
+- Requests
+- Responses
+- Middlewares
+- Handling errors
 
 ## 11. Validations and DTOS
 
 ## 12. Debugger
+
+## 13. Testing
 
 ## 98. Utils
 
