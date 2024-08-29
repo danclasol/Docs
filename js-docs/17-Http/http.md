@@ -1,8 +1,6 @@
 # HTTP - Hypertext Transfer Protocol (HTTP)
 
-Es un protocolo que nos permite realizar una petición de datos y recursos.
-
-Es la base de cualquier intercambio de datos en la web.
+Es un protocolo que nos permite que los navegadores web y los servidores se comuniquen entre sí, facilitando la obtención de recursos y la visualización de contenido en línea.
 
 ## Características
 
@@ -19,6 +17,8 @@ En los protocolos basados en el modelo cliente-servidor, como es el caso del HTT
 - El servidor procesa la petición, y responde con un código de estado y los datos correspondientes.
 
 # Estructura Peticion HTTP
+
+El protocolo establece las reglas y convenciones que para realizar esta comunicación.
 
 ## Petición HTTP
 
