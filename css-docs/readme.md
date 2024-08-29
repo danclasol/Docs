@@ -54,28 +54,62 @@
 
 # Filtros
 
-# Layouts
+# Columns
 
 - Columns
+
+# Flexbox
+
 - Flexbox
+- Flexbox Resume
+
+# Grid
+
 - Grid
+- Grid Resume
 
 # Transforms
 
-- translate
-- rotate
-- perspective
-- scale
-- skew
-- Multiple transforms
-- Matrix
-- Common problems with transform
+- Transform
+  - translate
+  - rotate
+  - perspective
+  - scale
+  - skew
+  - Multiple transforms
+  - Matrix
+  - Common problems with transform
 
 # Transitions
+
+- Transitions
+  - transition-property
+  - transition-duration
+  - transition-delay
+  - transition-timing-function
+  - Transition shorthand
+  - Animar varias propiedades
+- Transitions events
+  - transitionrun
+  - transitionstart
+  - transitionend
+  - transitioncancel
+- Browser behaviour
+
+# Animations
+
+- Animations
 
 # Images
 
 - Utils
+
+# ScrollBar
+
+- ScrollBar
+  - scrollbar-color
+  - scrollbar-width
+  - scrollbar-gutter
 
 # Utils
 
