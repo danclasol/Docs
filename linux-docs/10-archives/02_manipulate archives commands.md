@@ -36,31 +36,13 @@ tar -t archive_name.tar
 
 ## Compress archives
 
-The `tar` command doesn't provide any compression tool. However,
+The `tar` command doesn't provide any compression tool. However, we can use the option `-z` to compress using `gzip`.
 
-### `-z`
-
-Compress the archive using gzip.
 
 ```sh
-
+tar -czf archive_name.tar.gz directory_name/
 ```
 
-### `-j`
-
-Compress the archive using bzip2.
-
-```sh
-
-```
-
-### `-J`
-
-Compress the archive using xz.
-
-```sh
-
-```
 
 ## Options
 

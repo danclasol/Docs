@@ -32,6 +32,7 @@ Different compression algorithms can be applied:
 
 The zip format is widely used across different operating systems, including Linux.
 
+Handy for creating cross-platform archives. (e.g.: Windows)
+
 Unlike tar, which separates the archiving and compression steps, zip archives both bundles and compresses the files simultaneously.
 
-Handy for creating cross-platform archives.
