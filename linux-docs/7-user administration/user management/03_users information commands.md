@@ -79,7 +79,19 @@ who
 sudo lastlog
 ```
 
-## Get entries from administrative databases
+## Show the last login times for all users
+
+```sh
+sudo lastlog
+```
+
+## Show current logged user
+
+Display the name of the user currently logged into the system, in case we are logged as a different user with the command `su`
+
+```sh
+logname
+```
 
 ### Get user information
 

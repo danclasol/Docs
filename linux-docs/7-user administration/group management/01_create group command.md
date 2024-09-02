@@ -2,6 +2,8 @@
 
 Create a new group on the system.
 
+This command will create an entry in the file `/etc/group`
+
 ```sh
 groupadd [options] groupname
 ```

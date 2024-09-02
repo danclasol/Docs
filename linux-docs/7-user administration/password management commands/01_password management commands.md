@@ -1,12 +1,44 @@
 # Change password
 
+The `passwd` command is used to change a user's password.
+
+## Common Use
+
+### Change current user password
+
+```sh
+passwd
+```
+
+### Change password of another user
+
 Set or change a user's password.
 
 ```sh
 sudo passwd username
 ```
 
+### Disable password
+
+This locks the account by disabling the password.
+
+```sh
+sudo passwd -l username
+```
+
+### Unlock a user's password
+
+This unlocks the account.
+
+```sh
+sudo passwd -u username
+```
+
 # Change password expiration information
+
+The `chage` command is used to manage and view user password expiration and aging policies.
+
+Change password expiration information
 
 ```sh
 sudo chage [options] username
