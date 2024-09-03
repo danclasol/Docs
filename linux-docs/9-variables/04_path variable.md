@@ -14,10 +14,10 @@ export PATH="$PATH:/path/to/directory"
 
 ### Permanently
 
-1. Edit the .bashrc or .bash_profile file:
+1. Edit the .profile or .bashrc file:
 
    ```sh
-   nano ~/.bashrc
+   nano ~/.profile
    ```
 
 2. Add the export command.
@@ -29,5 +29,5 @@ export PATH="$PATH:/path/to/directory"
 3. Save and close the file, then apply changes with.
 
 ```sh
-source ~/.bashrc
+source ~/.profile
 ```
