@@ -61,3 +61,10 @@ Adds execute permission for the owner and sets read-only permission for others
 ```sh
 chmod u+x,g-w filename
 ```
+
+Adds execute permission for all groups
+
+```sh
+chmod a+x filename
+chmod +x filename
+```
