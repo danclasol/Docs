@@ -52,6 +52,8 @@
 - User Commands
 - User Management Commands
 - Group Management Commands
+- Password Management Commands
+- Sudo & Su
 
 ## 8. Permissions
 
@@ -72,14 +74,31 @@
 - Command Prompt
 - Variables configuration files
 
-## 10. Packages
+## 10. Archives
+
+## 11. Packages
 
 - Packages
 - Install packages
 
-## 98. Applications
+## 12. Text editors
 
-- Text editor
+- Nano
+- Vim
+
+## 13. Shell script
+
+- Shell script
+- Variables
+- If..else
+- Switch Case
+- Loops
+- Operators
+- Utils
+  - Test Command
+  - User Input
+
+## 98. Applications
 
 ## 99. Distros
 

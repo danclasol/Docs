@@ -15,3 +15,9 @@ apt install htop
 ```sh
 yum update -y
 ```
+
+# Unistall package
+
+```sh
+apt-get remove libvirt-clients
+```
