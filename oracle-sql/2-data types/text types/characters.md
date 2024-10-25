@@ -86,6 +86,8 @@ CHAR [(size [BYTE | CHAR])]
 
 Fixed-length national character data. If the data you insert is shorter than the specified length, Oracle pads the remaining space with spaces.
 
+Stores Unicode values (multi-byte).
+
 Uses the database's national character set (defined by `NLS_NCHAR_CHARACTERSET`), typically `AL16UTF16` or `UTF8`.
 
 - Maximum size is determined by the national character set definition, with an upper limit of `2000` _bytes_
@@ -115,6 +117,8 @@ VARCHAR2(size [BYTE | CHAR])
 ## `NVARCHAR2`
 
 Variable-length national character data.
+
+Stores Unicode values (multi-byte).
 
 Uses the database’s national character set (defined by `NLS_NCHAR_CHARACTERSET`), typically `AL16UTF16` or `UTF8`.
 
