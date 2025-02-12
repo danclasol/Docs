@@ -185,16 +185,40 @@ git clean -i
 
 # `reset`
 
-Reset current `HEAD` to the specified state
+Allows you to undo changes in your repository. It modifies the `HEAD` and optionally the index and working directory.
+
+Reset current `HEAD` to the specified state.
+
+- `HEAD`
+- `HEAD^`
+- `HEAD~2`
 
 ```sh
-git reset <FILE>
+git reset
 ```
 
 Unstage any staged changes for the given file
 
 ```sh
-git reset -- <FILE>
+git reset -- file.txt
+```
+
+Undo last commit but keeping changes in working directory
+
+```sh
+git reset --soft HEAD~1
+```
+
+Undo last commit discarding changes permanently
+
+```sh
+git reset --hard HEAD~1
+```
+
+Unstage Changes but Keep them in working directory
+
+```sh
+git reset --mixed HEAD~1
 ```
 
 # `rm`
@@ -205,13 +229,9 @@ Remove files from the working tree and from the index
 git rm <FILES>
 ```
 
-Removing a file
+## Parameters
 
-```sh
-git rm file.txt
-```
-
-Removing a directory
+Removing a directory, all files will be removed recursively
 
 ```sh
 git rm -r old_directory/
@@ -221,6 +241,18 @@ Force removing a modified file
 
 ```sh
 git rm -f modified_file.txt
+```
+
+Remove file from repository but keep it locally in the workspace
+
+```sh
+git rm --cached file.txt
+```
+
+Check the files that will be remove
+
+```sh
+git rm -dry-run directory/
 ```
 
 # `mv`
