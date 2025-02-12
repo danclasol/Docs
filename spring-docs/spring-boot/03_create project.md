@@ -16,16 +16,15 @@ You must have mv install in your computer
 mvn -version
 ```
 
-# Spring initializr
+# Using Spring initializr
 
 Use this website to create a project with Spring boot.
-https://start.spring.io/
 
 ### 1. Select the following options:
 
 - **Project**: Maven, Gradle
 - **Lenguage**: Java, Kotlin, Groovy
-- **Spring Boot version**: 3.4.2 (latest: 12/02/2025)
+- **Spring Boot version**: Pick the latest stable version (latest 3.4.2 in 12/02/2025)
 - **Project Metadata**:
   - group, artifact, name, descrption
   - Packing: Jar or War
@@ -33,12 +32,51 @@ https://start.spring.io/
 
 ### 2. Add dependencies
 
-For example, Spring Web
+Select the dependencies you need. For example Spring Web, Spring Data JPA, PostgreSQL, Thymeleaf
 
 ### 3. Download project
 
-Click on 'Generate' button to download the _zip_ with the project
+Click on 'Generate' button to Generate project and download the _zip_ file with the project
 
 ### 4. Open project on IDE
 
 Extract the project in your workspace and open it with your IDE.
+
+### 5. Run the Application
+
+- Open the main class (e.g., DemoApplication.java)
+- Click Run (or use mvn spring-boot:run in the terminal)
+
+# Using Spring Boot CLI (Command Line)
+
+### 1. Install Spring Boot CLI
+
+```sh
+sdk install springboot # If using SDKMAN
+brew install spring-boot-cli # On macOS (Homebrew)
+```
+
+### 2. Create a new project
+
+```sh
+spring init --dependencies=web,lombok,jpa mysql-demo
+```
+
+### 3. Open project folder
+
+```sh
+cd mysql-demo
+```
+
+### 4. Run the application
+
+```sh
+mvn spring-boot:run
+```
+
+# Using IntelliJ IDEA / Eclipse
+
+1. Open the IDE
+2. Create a New Project → Spring Boot → Spring Initializr
+3. Configure Dependencies & Generate Project
+4. Run the main() method in the generated Application.java file
