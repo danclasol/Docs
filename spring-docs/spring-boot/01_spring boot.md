@@ -1,14 +1,8 @@
 # Spring boot
 
-Spring Boot helps you to create stand-alone, production-grade Spring-based applications that you can run.
+Spring Boot is a project within the Spring Framework ecosystem designed to simplify the creation of Java applications.
 
-- Provide a radically faster and widely accessible getting-started experience for all Spring development
-
-- Be opinionated out of the box but get out of the way quickly as requirements start to diverge from the defaults
-
-- Provide a range of non-functional features that are common to large classes of projects (such as embedded servers, security, metrics, health checks, and externalized configuration)
-
-- Absolutely no code generation (when not targeting native image) and no requirement for XML configuration
+Reduces the need for manual configuration by providing auto-configuration.
 
 ## Differences with Spring Framework
 
@@ -17,3 +11,7 @@ Spring Boot helps you to create stand-alone, production-grade Spring-based appli
 - Desgined for microservices
 - Use of starters for managing dependencies
 - Simpler monitoring tasks with Actuator
+
+## When to use Spring Boot
+
+Use Spring Framework when you need a highly customized and modular architecture with specific configurations and Spring Boot When you want fast development, minimal setup, and built-in microservices support.
