@@ -47,12 +47,6 @@ git merge <>
 git mergetool <>
 ```
 
-# log
-
-```
-git log <>
-```
-
 # stash
 
 ```
