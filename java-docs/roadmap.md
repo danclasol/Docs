@@ -36,6 +36,7 @@
 - Inyeccion de dependencias
 - Patron DTO
 - JAP + Hibernate
+- Programacion Reactiva
 
 ## Microservicios
 
@@ -53,9 +54,13 @@
 - Prog Funcional
 - Hilos
 - Clean Code
+- Anotaciones
 - Utils Y generics
 - Optionals
 - Patrones de Diseño
+- Java Reflexion
+- API Reflection
+- intStream
 
 # Seguridad
 
