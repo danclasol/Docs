@@ -2,7 +2,7 @@
 
 Authentication is the process of establishing each user's identity before they can access your application.
 
-APEX engine uses APP_USER to track user's login name in session state
+APEX engine uses `APP_USER` to track user's login name in session state
 
 ## Authentication Methods
 
