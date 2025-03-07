@@ -26,19 +26,32 @@ Follow these steps to configure your application to send emails:
 ### Creating an approved sender for Email delivery
 
 - Menu > Developer Services > Application Integration > Email Delivery
+
+![Email Delivery](images/cloud_email_delivery.png)
+
 - Enter to Approved Senders
 - Click Create Approved Sender
+
+![Approved Senders](images/cloud_approved_senders.png)
+
 - Enter email and click on Create Approved Sender
 
 ### Configurating the SMTP parameters in the Application Express instance
 
 - Menu > Developer Services > Application Integration > Email Delivery
+
+![Email Delivery](images/cloud_email_delivery.png)
+
 - Enter to Configuration
+
 - Copy the MTP Sending Information
   - Public Endpoint: smtp.email.eu-madrid-1.oci.oraclecloud.com
 - Menu > Oracle Database > Autonomous Database
 - Log in the workspace as ADMIN
 - Manage Instances > Instance Settings
+
+![Instance Settings](images/admin_instance_settings.png)
+
 - In Email Tab, enter the following:
   - SMTP Host Address: smtp.email.eu-madrid-1.oci.oraclecloud.com
   - SMTP Authentication Username
