@@ -106,7 +106,7 @@ npm run format
 
 ## Resolver conflictos ESLint + Prettier
 
-Al usar ambos a la vez, hay que indicar a ESLint que para el formateo del código sigua las reglas de prettier. Si no cada uno prodria mostrar errores distintos.
+Al usar ambos a la vez, hay que indicar a ESLint que para el formateo del código siga las reglas de prettier. Si no cada uno podria mostrar errores distintos.
 
 Para ello tenemos que instalar la dependencia de desarrollo:
 
