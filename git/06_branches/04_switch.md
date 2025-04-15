@@ -10,7 +10,7 @@ git switch BRANCH_NAME
 
 ## Common Use
 
-Create and switch to a new branch
+Create and copy current local changes to a new branch
 
 ```sh
 git switch -c NEW_BRANCH_NAME
