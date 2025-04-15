@@ -1,0 +1,2 @@
+- fuertemente tipado
+- case sensitive
