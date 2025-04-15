@@ -7,3 +7,5 @@
 ## Core
 
 ### `core.editor`
+
+## Alias
