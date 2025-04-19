@@ -62,7 +62,7 @@ Decimal numbers, more precision
 double d = 3.14159;
 ```
 
-## Booleans
+## `boolean`
 
 Only true or false
 
@@ -72,7 +72,7 @@ Only true or false
 boolean b = true;
 ```
 
-## Characters
+## `char`
 
 Single character
 
