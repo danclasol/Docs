@@ -6,22 +6,30 @@ There are three main stages in the life cycle of a java program.
 
 - **Compilation**:
 
-  - source code of the application is converted into bytecode using the “javac” compiler
-
+  - java compiler (_javac_) translate the source code of the application into bytecode files
+  - bytecode is stored in _.class_ files
+  - bytecode is the intermediate representation of the Java code
+  - manually compilattion in a shell
     ```sh
     javac MyProgram.java
     ```
 
-    Creates the file _MyProgram.class_ (bytecode)
-
 - **Class Loading**:
-  - bytecode is loaded into memory and the necessary class files are prepared for execution
+
+  - bytecode files are loaded into memory
+  - the necessary class files are prepared for execution
+
+- **Bytecode verification**
+
+  - bytecodes are check there aren't security problems
+
 - **Bytecode Execution**:
 
-  - JVM executes the bytecode and the program runs
+  - JVM converts the bytecode into native machine code
 
-    JVM executes main method
+  - JVM executes the program, executing the main method
 
+  - manually execute a java bytecode file
     ```sh
     java MyProgram
     ```
