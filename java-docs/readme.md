@@ -13,12 +13,15 @@
 - Primitives
 - Non primitives
 - Type Casting
+- void
 
 ## 3. Variables
 
 - Variables
 - Constants
 - Naming rules
+- Scope
+- Types
 
 ## 4. Strings
 
@@ -27,7 +30,17 @@
 
 ## 5. Numbers
 
+- Numbers
+- Math Class
+- BigInt and bigDecimal
+
 ## 6. Dates
+
+- Dates
+- Methods
+- Formatting dates
+- Dates Enums
+- Date Exceptions
 
 ## 7. Operators
 
@@ -38,7 +51,11 @@
 - Unary operators
 - Ternary operator
 
-## 8. Functions
+## 8. Methods
+
+- Methods
+- Recursion
+- Overloading
 
 ## 9. Arrays
 
