@@ -19,9 +19,15 @@ public void greet() {
 ## Instance Variables (non-static fields)
 
 - declared inside a class, but outside any method
+- without `static` keyword
 - belong to each object (instance) of the class
-- have default values if not initialized
 - used to store object-specific data
+- if declare as `private`:
+  - methods can access this variable
+  - not accessible from outside
+- if declare as `public`:
+  - accessible from every instance of the class
+  - not recommended
 
 ```java
 public class Person {
@@ -30,12 +36,23 @@ public class Person {
 }
 ```
 
+To access you need an instance of the class
+
+```java
+object.variable
+```
+
 ## Class Variables (static variables)
 
-- declared with the static keyword inside a class, but outside methods
+- declared inside a class, but outside methods
+- with `static` keyword
 - shared across all instances of the class
-- get default values
 - used for shared data, like counters or settings
+- if declare as `private`:
+  - belongs only to the class where it's declared
+- if declare as `public`:
+  - can be accessed from any class, as long as you import the class
+  - utility functions, like in Math or Collections
 
 ```java
 public class Counter {
@@ -45,4 +62,11 @@ public class Counter {
         totalCount++;
     }
 }
+```
+
+Accessed using
+
+```java
+ClassName.variable
+object.variable
 ```
