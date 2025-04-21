@@ -1,5 +1,11 @@
 # Collections
 
+Collections refer to a framework that provides architecture to store and manipulate groups of objects
+
+- easy data manipulation (sorting, searching, etc.)
+- dynamic size
+- use interface `java.util.Collections`
+
 ## List
 
 Ordered collection. Duplicates are allowed.

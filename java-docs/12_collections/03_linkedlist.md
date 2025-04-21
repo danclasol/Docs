@@ -2,9 +2,12 @@
 
 A LinkedList is a linear data structure that stores elements in nodes where each node contains:
 
-- The data (element)
-- A reference (pointer) to the next node
-- (And in doubly linked lists, a reference to the previous node too)
+- doubly linked lists, allow read the list in two directions
+- each element has a reference (pointer) to the next and previous node
+- allow duplicates
+- mantain insertion order
+- faster manipulation than `ArrayList`
+- can be use as list, stack, or queue
 
 In Java, the LinkedList class implements both:
 

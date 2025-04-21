@@ -6,6 +6,8 @@ Unlike regular arrays, it grows dynamically as elements are added or removed.
 
 - ordered collection (insertion order maintained)
 - allows nulls and duplicates
+- allow random access
+- slow manipulation, as it need to read all the list
 
 ## Creation
 
