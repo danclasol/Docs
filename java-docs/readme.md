@@ -69,3 +69,22 @@
 - if...else
 - loops
 - switch
+
+## 11. POO
+
+## 12. Collections
+
+- Collections
+- ArrayLists
+- LinkedList
+- HashSet
+- HashMap
+
+## 13. Functional Programming
+
+- Functional Programming
+- Lambdas expressions
+- Functional interfaces
+  - Build-in interfaces
+- Method references
+- Streams
