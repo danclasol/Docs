@@ -72,6 +72,16 @@
 
 ## 11. POO
 
+- POO
+- Classes
+- Inherence
+- Modifiers
+- Polymorphism
+- Abstract classes
+- Interfaces
+- Anonymous Classes
+- Packages
+
 ## 12. Collections
 
 - Collections
@@ -80,7 +90,18 @@
 - HashSet
 - HashMap
 
-## 13. Functional Programming
+## 13. Enums
+
+- Enums
+- Enum Methods
+
+## 14. Exceptions
+
+- Exceptions
+- Custom Exceptions
+- Anti-patterns
+
+## 15. Functional Programming
 
 - Functional Programming
 - Lambdas expressions
@@ -88,3 +109,21 @@
   - Build-in interfaces
 - Method references
 - Streams
+
+## 16. Optionals
+
+- Optionals
+- Methods
+
+## 17. Generics
+
+## 18. Threads
+
+## 98. Releases
+
+- Java 8
+- Java 9
+- Java 10
+- Java 11
+- Java 17
+- Java 21
