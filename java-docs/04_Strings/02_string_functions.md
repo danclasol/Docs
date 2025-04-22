@@ -112,6 +112,13 @@ Repites the string a numer of times
 
 ```java
 System.out.println(str1 + ".repeat() ->" + str1.repeat(3));
+```
+
+## `lines()`
+
+Returns a `Stream<String>`
+
+```java
 System.out.println(str1 + ".lines() ->" + str1.lines().collect(Collectors.toList()));
 ```
 
