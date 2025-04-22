@@ -10,7 +10,7 @@ There are three types of exceptions
 
 - Checked Exceptions
 
-  - must be either caught or declared in the method signature using throws
+  - must be either caught or declared in the method signature using `throws`
   - checked at compile-time
   - examples: `IOException`, `SQLException`
 
