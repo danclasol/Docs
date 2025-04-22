@@ -14,6 +14,18 @@ Creates a commit and adds a message describing the changes directly in the comma
 git commit -m MESSAGE
 ```
 
+Change the most recent commit message
+
+- it opens your default text editor
+- `i` to enter Insert mode (if you're not already in it)
+- modify the commit message
+- `ESC` to leave Insert mode
+- `:wq` to save and close
+
+```sh
+git commit --ammend
+```
+
 ## Options
 
 ### `-a` or `--all`
