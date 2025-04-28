@@ -6,3 +6,18 @@ Spring Data JPA provides a higher level of abstraction over JPA (Jakarta Persist
 - powerful query methods
 
 Spring Data JPA leverages JPQL and simplifies its usage by generating queries automatically based on method names and allowing custom queries with @Query.
+
+## Adding Spring Data JPA
+
+```xml
+<dependency>
+   <groupId>org.springframework.data</groupId>
+   <artifactId>spring-data-jpa</artifactId>
+</dependency>
+```
+
+In Spring Boot
+
+```xml
+
+```
