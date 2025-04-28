@@ -1,14 +1,36 @@
 # Spring Framework
 
-## 1. Spring Core
+## 1. Spring Framework
 
-## 2. Srping Data
+- Spring Framework
+- Spring Framework Runtime
+- Versions
+- Spring Projects
 
-## 3. Spring Web
+## 2. Spring Core
 
-## 4. Spring AOP
+- Spring Core
+- Inversion of Control
+- Spring Beans
+- Annotations
+- Configuration Files
 
-## 5. Spring Security
+## 3. Spring Data
+
+- Spring Data
+- Spring Data JDBC
+- Spring Data JPA
+- Annotations
+
+## 4. Spring Security
+
+- Spring Security
+- Filters
+
+## 5. Spring Boot
+
+- Fundaments
+- Spring Web
 
 ## 6. Spring Test
 
@@ -19,15 +41,17 @@
 - Docker
 - Events (Kafka)
 
-## 8. Spring Webflux
+## 8. Spring AI
+
+## 9. Spring Batch
+
+## 10. Spring Webflux
 
 - Reactive Streams
 - Callbacks
 - Project reactor
 - Flux
 - Mono
-
-## 9. Spring Boot
 
 ## 98. Maven
 
