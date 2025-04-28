@@ -19,5 +19,8 @@ Spring Data JPA leverages JPQL and simplifies its usage by generating queries au
 In Spring Boot
 
 ```xml
-
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
 ```
