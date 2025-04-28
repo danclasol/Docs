@@ -50,6 +50,4 @@
 - Reactive
 - Generative AI
 
-# Injeccion de dependencias
 
-# Inverision de control

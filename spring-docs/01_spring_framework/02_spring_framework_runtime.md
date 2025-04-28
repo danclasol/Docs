@@ -1,4 +1,4 @@
-# Core Technologies
+# Spring Technologies
 
 ## Core
 
