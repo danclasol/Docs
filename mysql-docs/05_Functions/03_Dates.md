@@ -96,6 +96,14 @@ Returns the last day of the month for a given date.
 SELECT LAST_DAY('2025-04-10'); -- 2025-04-30
 ```
 
+## `DATEDIF`
+
+Returns the number of days between the two dates (end date minus start date).
+
+```sql
+SELECT DATEDIFF('2005-08-02', '2005-07-11');
+```
+
 ## `TIMESTAMPDIFF`
 
 Difference in specified unit
