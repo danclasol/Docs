@@ -111,3 +111,17 @@ Specify the number of records to return from a query.
 SELECT * FROM employees
 LIMIT 5;
 ```
+
+Use `OFFSET` to control the number of rows returned by a query — especially useful for pagination.
+
+```sql
+SELECT * FROM table_name
+LIMIT <row_count> OFFSET <start_position>;
+```
+
+Get 10 rows starting from row 11 (i.e. skip first 10):
+
+```sql
+SELECT * FROM users
+LIMIT 10;
+```
