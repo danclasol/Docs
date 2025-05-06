@@ -1,3 +1,5 @@
+# Database DDL Commands
+
 ## USE database
 
 Switches to a specific database for subsequent operations.

@@ -1,3 +1,5 @@
+# Table DDL Commands
+
 ## CREATE TABLE
 
 Creates a new database object
