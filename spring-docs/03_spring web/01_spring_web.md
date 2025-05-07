@@ -1,2 +1,0 @@
-@ResponseEntity
-@ResponseBody

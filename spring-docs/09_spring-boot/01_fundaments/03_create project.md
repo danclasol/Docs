@@ -20,6 +20,8 @@ mvn -version
 
 Use this website to create a project with Spring boot.
 
+https://start.spring.io/
+
 ### 1. Select the following options:
 
 - **Project**: Maven, Gradle
@@ -42,11 +44,6 @@ Click on 'Generate' button to Generate project and download the _zip_ file with 
 
 Extract the project in your workspace and open it with your IDE.
 
-### 5. Run the Application
-
-- Open the main class (e.g., DemoApplication.java)
-- Click Run (or use mvn spring-boot:run in the terminal)
-
 # Using Spring Boot CLI (Command Line)
 
 ### 1. Install Spring Boot CLI
@@ -59,19 +56,13 @@ brew install spring-boot-cli # On macOS (Homebrew)
 ### 2. Create a new project
 
 ```sh
-spring init --dependencies=web,lombok,jpa mysql-demo
+spring init --dependencies=web,lombok,jpa spring-demo
 ```
 
 ### 3. Open project folder
 
 ```sh
-cd mysql-demo
-```
-
-### 4. Run the application
-
-```sh
-mvn spring-boot:run
+cd spring-demo
 ```
 
 # Using IntelliJ IDEA / Eclipse
@@ -79,4 +70,18 @@ mvn spring-boot:run
 1. Open the IDE
 2. Create a New Project → Spring Boot → Spring Initializr
 3. Configure Dependencies & Generate Project
-4. Run the main() method in the generated Application.java file
+
+# Run the Application
+
+## Using IntelliJ
+
+Run the `main()` method in the generated `Application.java` file
+
+- Open the main class (e.g., `Application.java`)
+- Click _Run_
+
+## Using Command Line
+
+```sh
+mvn spring-boot:run
+```
