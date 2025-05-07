@@ -13,9 +13,14 @@
 - Sorting
 - Grouping
 - Subqueries
+- Joins
+- With...data
 
 ## 4. Operators
 
+- Comparison Operators
+- Logical Operators
+- Arithmetic Operators
 - Set Operators
   - Union
   - Union all
@@ -30,16 +35,13 @@
 
 ## 6. Data Definition Language (DDL)
 
-- CREATE
-- ALTER
-- DROP
-- RENAME
-- TRUNCATE
-- COMMENT
+- Database
+- Tables
+- View table definitions
 
 ## 7. Data Manipulation Language (DML)
 
-- SELECT
+- DML
 - INSERT
 - UPDATE
 - DELETE
@@ -49,34 +51,29 @@
 
 - Primary key
 - Foreign key
-- Check
-- Unique
-- Not Null
-- DEFAULT
+- Constraints
+  - Check
+  - Unique
+  - Not Null
+  - DEFAULT
 
 ## 9. Views
 
 - Views
+- Update Views
+- Views Tables
 
 ## 10. Windows Functions
 
-- Windows Functions
-- Common Functions
+- Windows functions
+- Ranking functions
+- Comparing functions
+- Aggregate functions
 
-## Data Control Language (DCL)
+## 11. Optimization
 
-- GRANT
-- REVOKE
-
-## Transaction Control Language (TCL)
-
-- COMMIT
-- ROLLBACK
-- SAVEPOINT
-
-# 99. Development Enviromente for SQL in Oracle
-
-- Oracle SQL Developer
-- SQL\*Plus
-- Oracle JDeveloper
-- Oracle Application Express
+- Optimizations
+- Execution plan
+- Indexes
+- Temporal Tables
+- Table partitions
