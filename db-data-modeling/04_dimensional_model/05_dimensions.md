@@ -26,8 +26,6 @@ Using dimensions tables brings many benefits
 - support historical changes (e.g., customer's address change)
 - applying SCD techniques without impacting the fact table
 
-Example: Type 2 (new row for each change), Type 3 (add previous value in a column).
-
 ### Cleaner star schema structure
 
 - Clear separation of concerns:

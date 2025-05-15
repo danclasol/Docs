@@ -22,7 +22,8 @@ A line labeled can be set to represent the relation total or partial
 
 - Disjoint
 
-  - an instance can belong to only one subtype.
+  - an instance can belong to only one subtype
+  - User can be Manager or Engineer, but not both
   - e.g.: a person is either a student or a teacher
 
 - Overlapping
