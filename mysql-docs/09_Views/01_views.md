@@ -32,7 +32,3 @@ To remove a view from the database:
 ```sql
 DROP VIEW high_salary_employees;
 ```
-
-## WITH CHECK OPTION
-
-## INSERT, UPDATE AND DELETE
