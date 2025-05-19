@@ -115,19 +115,3 @@ SELECT REVERSE('abc') -- 'cba'
 ## `STRING_SPLIT()`
 
 Splits a string into rows of substrings.
-
-## `FORMAT()`
-
-Returns the formatted string.
-
-```sql
-
-```
-
-## `CHAR()`
-
-Returns the character for each integer passed
-
-```sql
-
-```
