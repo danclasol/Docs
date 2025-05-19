@@ -24,6 +24,7 @@ Snowflake is SaaS which means that is a cloud-based software delivery model wher
 Stores all your structured and semi-structured data (CSV, JSON, Parquet, etc.).
 
 - data is stored in compressed, optimized formats in cloud storage (AWS S3, Azure Blob, GCP Storage)
+- saved in blobs
 - don’t need to manage the storage directly
 - Snowflake takes care of data organization, compression, encryption, and optimization
 - cost-efficient: only pay for the data you store
@@ -33,6 +34,7 @@ Stores all your structured and semi-structured data (CSV, JSON, Parquet, etc.).
 This is where all the processing (queries, transformations, loading) happens.
 
 - compute resources are called Virtual Warehouses
+- performs MMP (Massive Parallel Processing)
 - can scale up/down independently
 - multiple warehouses can run at the same time without impacting each other
 - can dedicate warehouses for different workloads
@@ -40,7 +42,7 @@ This is where all the processing (queries, transformations, loading) happens.
 
 ### Services layers
 
-Coordinates authentication, query parsing, optimization, metadata management, access control, caching, etc.
+Manages infrastructure, authentication, query parsing, optimization, metadata management, access control, caching, etc.
 
 - manages how queries are executed
 - ensures security, governance, and availability
