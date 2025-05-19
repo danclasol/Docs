@@ -76,7 +76,6 @@ cd spring-demo
 ## Using IntelliJ
 
 Run the `main()` method in the generated `Application.java` file
-
 - Open the main class (e.g., `Application.java`)
 - Click _Run_
 

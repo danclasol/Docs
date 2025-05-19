@@ -21,6 +21,8 @@ Enables Spring Boot’s auto-configuration mechanism, eliminating the need for m
 - Spring Boot auto-configures beans and settings for things like database connections, web servers, and more
 - included in the `@SpringBootApplication` annotation
 
+
+
 ## `@EnableConfigurationProperties`
 
 Enables automatic binding of properties from external configuration sources (like application.properties) to beans annotated with `@ConfigurationProperties`.
