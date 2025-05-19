@@ -2,7 +2,7 @@
 
 Window Functions are a powerful SQL feature used to perform calculations across a set of table rows that are somehow related to the current row.
 
-Unlike aggregate functions, which return a single value after grouping, window functions return a value for each row
+Unlike aggregate functions, which return a single value after grouping, window functions return a value for each row.
 
 Each row retains its original identity, and you can compute things like:
 
@@ -14,7 +14,7 @@ Each row retains its original identity, and you can compute things like:
 ## Syntax
 
 - `PARTITION BY` (optional)
-  - divides the result set into groups (partitions)
+  - divides the result set into groups of data (partitions)
   - allow to apply funtions for each group separately
 - `ORDER BY` (optional)
   - specifies the order of rows within each partition
