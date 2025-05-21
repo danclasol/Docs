@@ -17,6 +17,11 @@
 ## 3. Data Loading
 
 - Data loading
+- Stages
+- COPY Command
+- File Format
+- Working with rejects
+- Load history
 
 ## 4. ETL Processes
 
@@ -50,4 +55,9 @@
 
 - Materialized Views
 
-## 12. Access Managemente
+## 12. Access Management
+
+## 99. Worksheet
+
+- Worksheets
+- Functions
