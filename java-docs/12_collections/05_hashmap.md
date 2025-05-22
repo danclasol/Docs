@@ -6,6 +6,7 @@ A `HashMap<K, V>` stores key-value pairs, where:
 - values can be duplicated
 - one null key is allowed, and multiple null values are allowed
 - fast access with average O(1) time complexity
+- implements the `Map` interface
 
 To use custom objects as keys, you must override `equals()` and `hashCode()`
 
@@ -31,6 +32,14 @@ Get value by key
 
 ```java
 System.out.println("Key 102: " + map.get(102));
+```
+
+### `replace(K key, V value)`
+
+Change the value associated with a key in a hashmap
+
+```java
+map.replace(2, "C++");
 ```
 
 ### `remove(Object key)`

@@ -63,6 +63,7 @@ Run thread
 
 - must be runned using a Thread
 - cannot be done directly with the `start()` method
+- the method will be executed in a separated thread
 
 ```java
 public class Main {
@@ -104,6 +105,8 @@ try {
 
 Pause the thread and release the lock
 
+- must be called from within a synchronized context
+
 ```java
 try {
     System.out.println("Waiting...");
@@ -116,14 +119,45 @@ try {
 
 Wake one waiting thread
 
+- must be called from within a synchronized context
+
 ```java
-notify();
+synchronized (this) {
+    System.out.println("Sending signal...");
+    notify();
+}
 ```
 
 ### `notifyAll()`
 
 Wake all waiting threads
 
+- must be called from within a synchronized context
+
 ```java
-notifyAll(); // wakes up all waiting threads
+synchronized (this) {
+    notifyAll();
+}
+```
+
+### `join()`
+
+Waits for another thread to finish.
+
+```java
+MyThread t = new MyThread();
+t.start();
+t.join(); // Waits for t to finish before continuing
+```
+
+### `isAlive()`
+
+Checks if the thread is still running.
+
+```java
+MyThread t = new MyThread();
+
+System.out.println("Before start: " + t.isAlive()); // false
+t.start();
+System.out.println("After start: " + t.isAlive()); // true
 ```
