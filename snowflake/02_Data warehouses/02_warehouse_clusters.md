@@ -1,24 +1,6 @@
-# Warehouse
+# Warehouse clusters
 
-In Snowflake, a Warehouse is a compute resource used to process queries, run transformations, and perform tasks like loading or exporting data.
-
-- virtual compute layer
-- scaled up (bigger size) or scaled out (multiple warehouses)
-- separate from storage
-
-## Warehouse sizes
-
-Snowflake offers T-shirt sizes for virtual warehouses.
-
-These define how much compute power (CPU, memory, etc.) is allocated.
-
-- X-Small: small development tasks, testing, light queries
-- Small: small teams, light analytics, small ELT jobs
-- Medium: medium data transformations, small dashboards
-- Large: heavy ELT jobs, large BI workloads
-- X-Large -> 6x-Large: Very large data processing, concurrent workloads
-
-## Warehouse clusters
+## Clusters types
 
 ### Single cluster
 
@@ -42,19 +24,19 @@ Multi-clustering allows a Snowflake Virtual Warehouse to automatically scale out
 - ✅ BI tools with many simultaneous queries
 - ✅ Large-scale batch jobs triggering lots of parallel queries
 
-### Scaling policies
+## Scaling policies
 
-#### Standard
+### Standard
 
-Automatically adds clusters quickly when demand increases.
+Immediately add clusters when either a query is queued or the system detects that tere are more queries that can be executed by the currently available clusters.
 
 - removes idle clusters immediately when demand decreases
 - designed for high performance and low query wait times
 - best when fast responsiveness is needed for workloads with unpredictable or spiky usage
 
-#### Economy
+### Economy
 
-Adds clusters more slowly to avoid scaling too aggressively.
+Add clusters only if the system estimates there's enough query load to keep the cluster busy for at least 6 minutes.
 
 - keeps idle clusters running longer before shutting them down
 - designed to reduce costs by preventing frequent scaling up/down
