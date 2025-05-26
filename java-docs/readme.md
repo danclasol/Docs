@@ -119,11 +119,18 @@
 
 ## 18. Threads
 
+## 19. Files
+
+- File
+- Path
+- Files Utilities
+- FileInputStream / FileOutputStream
+- BufferredInputStream / BufferedOutputStream
+- Scanner class
+
 ## 98. Releases
 
-- Java 8
-- Java 9
-- Java 10
-- Java 11
-- Java 17
-- Java 21
+- Java 8 (LTS)
+- Java 11 (LTS)
+- Java 17 (LTS)
+- Java 21 (LTS)
