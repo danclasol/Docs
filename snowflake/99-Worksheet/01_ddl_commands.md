@@ -58,12 +58,20 @@ CREATE OR REPLACE VIEW my_database.my_schema.active_employees AS
 SELECT * FROM employees WHERE status = 'active';
 ```
 
-### CREATE STAGE
+### CREATE SECURE VIEW
 
-Create a stage
+Create a secure view
 
 ```sql
-CREATE OR REPLACE STAGE my_database.my_schema.my_stage;
+CREATE OR REPLACE SECURE VIEW secure_employee_view AS
+SELECT
+  id,
+  name,
+  CASE
+    WHEN CURRENT_ROLE() = 'HR_ROLE' THEN salary
+    ELSE NULL
+  END AS salary
+FROM employees;
 ```
 
 ### CREATE STORAGE INTEGRATION
@@ -79,6 +87,66 @@ STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::123456789012:role/mySnowflakeRole'
 STORAGE_ALLOWED_LOCATIONS = ('s3://my-bucket/path/');
 ```
 
+## Shares
+
+### CREATE SHARE
+
+Create Share object
+
+```sql
+CREATE OR REPLACE SHARE my_share
+```
+
+### ALTER SHARE
+
+Add consumer to the share
+
+```sql
+ALTER SHARE my_share ADD ACCOUNTS = ('consumer_account_locator');
+```
+
+### SHOW SHARE
+
+List of share created.
+
+```sql
+SHOW SHARES;
+```
+
+### DESC SHARE
+
+Show details of a share.
+
+```sql
+DESC SHARE my_share;
+```
+
+### SHOW GRANTS
+
+List grant of a share.
+
+```sql
+SHOW GRANTS TO SHARE my_share;
+```
+
+## Stages
+
+### CREATE STAGE
+
+Create a stage
+
+```sql
+CREATE OR REPLACE STAGE my_database.my_schema.my_stage;
+```
+
+### LIST
+
+List files in a stage
+
+```sql
+LIST @aws_stage;
+```
+
 ## Roles
 
 ### CREATE ROLE
@@ -87,13 +155,21 @@ STORAGE_ALLOWED_LOCATIONS = ('s3://my-bucket/path/');
 CREATE OR REPLACE ROLE analyst_role;
 ```
 
-### GRANT ROLE
+### GRANT ACTIONS
 
-Give a user a privilege
+Give a user a privilege to perform an action
 
 ```sql
-GRANT ROLE analyst_role TO USER john_doe;
+GRANT SELECT ON ALL TABLES IN SCHEMA my_schema TO USER john_doe;
+GRANT SELECT ON ALL TABLES IN DATABASE my_database TO USER john_doe;
 ```
+
+### GRANT ROLE
+
+Give a user a privilege role
+
+````sql
+GRANT ROLE analyst_role TO USER john_doe;
 
 ### CREATE USER
 
@@ -105,7 +181,7 @@ CREATE OR REPLACE USER john_doe
   DEFAULT_ROLE = analyst_role
   DEFAULT_WAREHOUSE = my_warehouse
   MUST_CHANGE_PASSWORD = TRUE;
-```
+````
 
 ## FILE FORMATS
 
@@ -133,4 +209,34 @@ Drop file format
 
 ```sql
 DROP FILE FORMAT my_file_format;
+```
+
+## Reader Account
+
+### CREATE MANAGE ACCOUNT
+
+```sql
+CREATE MANAGED ACCOUNT reader_acct
+ADMIN_NAME = 'reader_admin'
+ADMIN_PASSWORD = 'StrongPassword123!';
+```
+
+### SHOW MANAGE ACCOUNT
+
+```sql
+SHOW MANAGE ACCOUNTS;
+```
+
+### DROP MANAGE ACCOUNT
+
+```sql
+DROP MANAGE ACCOUNTS reader_acct;
+```
+
+## ALTER SHARE
+
+Add the Reader Account to the Share
+
+```sql
+ALTER SHARE my_share ADD ACCOUNT = reader_acct;
 ```
