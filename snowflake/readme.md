@@ -14,7 +14,16 @@
 - Warehouse clusters
 - Warehouse operations
 
-## 3. Data Loading
+## 3. Data Types
+
+## 4. Functions
+
+- Number functions
+- Date functions
+- String functions
+- Utils functions
+
+## 5. Data Loading
 
 - Data loading
 - Stages
@@ -23,39 +32,59 @@
 - Working with rejects
 - Load history
 
-## 4. ETL Processes
-
-- ETL Processes Layers
-
-## 5. Optimization
+## 6. Optimization
 
 - Default optimizations
+- Performance optimizations
 
-## 6. Time Travel
+## 7. Time Travel
 
 - Time Travel
+- Restoring data
+- Retention time
 
-## 7. Fail Safe
+## 8. Fail Safe
 
 - Fail Safe
 
-## 8. Types of Tables
+## 9. Types of Tables
 
 - Tables types
+- Schema types
+- Database types
 
-## 9. Tasks
+## 10. Zero-Copy Cloning
+
+- Zero-Copy Cloning
+- Cloning privileges
+- Swapping
+
+## 11. Data Sharing
+
+- Data Sharing
+- Reader account
+- Secure View
+
+## 12. Data Sampling
+
+- Data Sampling
+
+## 13. Tasks
 
 - Tasks
+- Dependent tasks
+- Monitoring tasks
+- Conditions tasks
 
-## 10. Streams
+## 14. Streams
 
 - Streams
 
-## 11. Materialized Views
+## 15. Materialized Views
 
 - Materialized Views
 
-## 12. Access Management
+## 16. Access Management
 
 ## 99. Worksheet
 

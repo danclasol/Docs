@@ -21,6 +21,12 @@
 - View Tables
 - Load Data
 
+## Data Products
+
+- Private Sharing
+  - Create/edit shares objects
+  - Add consumer to shares
+
 ## Admin
 
 ### Costs Management

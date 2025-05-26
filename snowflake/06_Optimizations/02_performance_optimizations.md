@@ -1,4 +1,4 @@
-# Performan Optimizations
+# Performance Optimizations
 
 Although Snowflake manage many optimizations for us, we still have a series of aspects we can control
 
