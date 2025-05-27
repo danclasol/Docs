@@ -102,3 +102,39 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
   INSERT (id, name) VALUES (src.id, src.name);
 ```
+
+More complex example
+
+```sql
+MERGE INTO sales_final_table AS F
+USING (
+  SELECT str.*, st.location, st.employees
+  FROM sales_stream str
+  JOIN store_table st ON str.store_id = st.store_id
+) AS s
+ON f.id = s.id
+
+WHEN MATCHED
+  AND s.METADATA$ACTION = 'DELETE'
+  AND s.METADATA$ISUPDATE = FALSE
+THEN
+  DELETE
+
+WHEN MATCHED
+  AND s.METADATA$ACTION = 'INSERT'
+  AND s.METADATA$ISUPDATE = TRUE
+THEN
+  UPDATE
+  SET f.product = s.product
+      f.price   = s.price
+      f.amount  = s.amount
+      f.store_id = s.store_id
+  INSERT (id, name) VALUES (src.id, src.name)
+
+WHEN NOT MATCHED
+  AND s.METADATA$ACTION = 'INSERT'
+THEN
+  INSERT (id, product, price, store_id, amount, employees, location)
+  VALUES (s.id, s.product, s.price, s.store_id, s.amount, s.employees, s.location);
+
+```
