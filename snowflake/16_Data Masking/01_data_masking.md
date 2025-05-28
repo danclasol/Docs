@@ -32,7 +32,7 @@ Remove policy from a column
 
 ```sql
 ALTER TABLE IF EXISTS CUSTOMER MODIFY COLUMN phone
-UNSET MASKING POLICY phone_mask;
+UNSET MASKING POLICY;
 ```
 
 ## Delete policy
