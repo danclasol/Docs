@@ -53,6 +53,14 @@ ALTER TABLE PUBLIC.CUSTOMER
 SET DATA_RETENTION_TIME_IN_DAYS = 2;
 ```
 
+## Recommended Retention Period
+
+Depending on the context the recommended value can be:
+
+- Staging database: 0 days (transient data)
+- Production: 4-7 days
+- Large high-churn tables: 0 days (transient data)
+
 ## Monitoring Time Travel Storage
 
 Check how much storage is consuming a table
