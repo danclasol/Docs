@@ -2,18 +2,31 @@
 
 A Docker image is a read-only template used to create containers.
 
-It includes:
+- once an image is created, cannot be changed
+- if you want to change an image, you must create a new image
+
+A image can include:
 
 - application code
 - dependencies (libraries, packages, OS files)
 - environment variables
 - configuration files
 
+## Layers
+
+A Docker image is built in layers.
+
+- layers are stacked on top of each other to from the final image
+- docker caches layers to avoid rebuilding unchanged parts
+- layers are inmutables, it will mean to modify the image
+
+Each instruction in a Dockerfile (like `RUN`, `COPY`, `FROM`) creates a new layer.
+
 ## Dockerfile
 
 Dockerfile is a set of sequential instructions that tell Docker how to build an image.
 
-- allo multiple instructions
+- allow multiple instructions
 - can install dependencies, copy files, define environment variables, and more
 
 Example of a Dockerfile that builds an image that includes _Node.js_, your app code, dependencies, and starts your app with node _index.js_.
