@@ -34,3 +34,17 @@ Expands an array or object into multiple rows, one for each element.
 SELECT value AS fruit
 FROM TABLE(FLATTEN(INPUT => SPLIT('apple,banana,cherry', ',')));
 ```
+
+## `GENERATOR()`
+
+Function that creates a virtual table with a specified number of rows.
+
+Use the `SEQ()` functions to retun a sequence per row.
+
+- `SEQ4()`: 4-byte integer (from 0 upward)
+- `SEQ8()`: 8-byte integer (used for bigger numbers)
+
+```sql
+SELECT SEQ4() AS n
+FROM TABLE(GENERATOR(ROWCOUNT => N));
+```

@@ -23,9 +23,11 @@
 
 ## Data Products
 
+- Marketplace
 - Private Sharing
   - Create/edit shares objects
   - Add consumer to shares
+- Partner Connect
 
 ## Admin
 

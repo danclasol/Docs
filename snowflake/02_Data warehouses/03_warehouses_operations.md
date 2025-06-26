@@ -23,9 +23,9 @@ In the left Menu Bar:
 
 #### Advanced options
 
-- Auto-resume
+- Auto-resume (true/false)
   - whenever any statement that requires a warehouse is submitted
-- Auto-suspend
+- Auto-suspend (seconds)
   - if it is inactive for the specific time
 - Multi-cluster
   - min number of clusters
@@ -42,6 +42,7 @@ CREATE OR REPLACE WAREHOUSE MY_WAREHOUSE
 WITH
 WAREHOUSE_SIZE = XSMALL
 AUTO_SUSPEND = 300
+AUTO_RESUME = TRUE
 SCALING_POLICY = 'Economy'
 MIN_CLUSTER_COUNT = 1
 MAX_CLUSTER_COUNT = 3
