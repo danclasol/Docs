@@ -6,7 +6,7 @@ Core Java programming that provides the necessary environment for developing des
 
 ### Components
 
-Incluye basic Java libraries and APIs like:
+Includes basic Java libraries and APIs like:
 
 - core libraries (java.util, java.io, java.lang)
 - Java Virtual Machine (JVM)
@@ -22,9 +22,9 @@ Incluye basic Java libraries and APIs like:
 
 This edition is now called _Jakarta EE_ (since it moved to the Eclipse Foundation).
 
-Se construye sobre JSE y esta diseñado para desarrollar aplicaciones empresariales a gran escala, especialmente aplicaciones web y servicios del lado del servidor
+It is built on top of Java SE and is designed to develop large-scale enterprise applications, especially web applications and server-side services.
 
-Añade una serie de APIs y servicios adicionales para el desarrollo de aplicaciones distribuidas
+It adds a series of additional APIs and services for developing distributed applications.
 
 ### Components
 
