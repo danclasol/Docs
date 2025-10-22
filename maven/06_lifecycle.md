@@ -1,6 +1,8 @@
 # Lifecycles
 
-Maven is based around the central concept of a build lifecycle. What this means is that the process for building and distributing a particular artifact (project) is clearly defined.
+Maven is based around the central concept of a build lifecycle.
+
+Lifecycle is the process for building and distributing a particular artifact (project) is clearly defined.
 
 For the person building a project, this means that it is only necessary to learn a small set of commands to build any Maven project, and the _POM_ will ensure they get the results they desired.
 
