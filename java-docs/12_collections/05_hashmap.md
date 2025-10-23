@@ -2,11 +2,11 @@
 
 A `HashMap<K, V>` stores key-value pairs, where:
 
+- implements the `Map` interface
 - keys are unique
 - values can be duplicated
 - one null key is allowed, and multiple null values are allowed
 - fast access with average O(1) time complexity
-- implements the `Map` interface
 
 To use custom objects as keys, you must override `equals()` and `hashCode()`
 

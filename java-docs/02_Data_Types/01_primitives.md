@@ -1,5 +1,12 @@
 # Primitives Data Types
 
+Primitive types are the basic building blocks of data in Java.
+
+- are store as simple values directly in memory
+- cannot be null
+- are not objects
+- do not have methods (unlike objects)
+
 ## Numbers
 
 ### `byte`

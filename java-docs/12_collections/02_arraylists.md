@@ -8,6 +8,7 @@ Unlike regular arrays, it grows dynamically as elements are added or removed.
 - allows nulls and duplicates
 - allow random access
 - slow manipulation, as it need to read all the list
+- interfaces List provide many features
 
 ## Creation
 

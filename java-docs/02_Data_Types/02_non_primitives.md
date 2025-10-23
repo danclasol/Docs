@@ -1,5 +1,11 @@
 # Non primitives Data Types
 
+Non-primitive types are reference-based data types that store the address of objects in memory.
+
+- can store multiple values or complex data
+- can be null
+- can have methods and properties
+
 ## String
 
 Sequence of characters (text)
