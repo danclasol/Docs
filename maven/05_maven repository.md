@@ -29,6 +29,8 @@ The default online repository Maven uses when it can’t find a dependency local
 
 ## Remote/private repository
 
+We can use a customn repository, this dependencies will not be available in Maven Cental Repository.
+
 Used by organizations or teams to host internal or third-party libraries not available on Maven Central.
 
 Configuration example in `pom.xml`:
@@ -41,3 +43,7 @@ Configuration example in `pom.xml`:
   </repository>
 </repositories>
 ```
+
+Now Maven can download dependencies from:
+
+- https://repo.mycompany.com/maven2
