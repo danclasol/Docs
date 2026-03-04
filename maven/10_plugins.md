@@ -39,13 +39,17 @@ For example, `maven-failsafe-plugin` plugin has two main goals configured here:
 </build>
 ```
 
-## Common plugin
+## Common plugins
 
-- maven-compiler-plugin Compiles Java source code
-- maven-surefire-plugin Runs unit tests
-- maven-jar-plugin Packages the JAR
-- maven-install-plugin Installs artifact to local repo
-- maven-deploy-plugin Deploys artifact to remote repo
+There are available a list of plugin in the Maven repository: https://maven.apache.org/plugins/
+
+The most commot puligns are:
+
+- `maven-compiler-plugin`: compiles Java source code
+- `maven-surefire-plugin`: runs unit tests
+- `maven-jar-plugin`: packages the JAR
+- `maven-install-plugin`: installs artifact to local repo
+- `maven-deploy-plugin`: deploys artifact to remote repo
 
 
 ## Common commands
@@ -61,4 +65,33 @@ mvn <PLUGIN>:help
 To run a specific goal without executing its entire phase (and the preceding phases), we can use the command:
 ```sh
 mvn failsafe:integration-test
+```
+
+## Plugin properties
+
+The behaviour of a plugin can be customize using properties.
+
+### In Command line
+
+You can override properties at runtime:
+```sh
+mvn compiler:compile -Dmaven.compiler.verbose=true
+```
+ 
+### In `pom.xml`
+```xml
+<build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                      <verbose>true</verbose>
+                </configuration>
+            </plugin>
+        </plugins>
+    </pluginManagement>
+</build>
 ```
