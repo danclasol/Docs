@@ -5,8 +5,17 @@ The clean plugin is responsible for removing files generated during the build pr
 - remove compiled classes
 - remove packaged JAR/WAR files
 - remove any other generated build artifacts
+
 ```sh
 mvn clean
+```
+
+When you run `mvn clean`, you don’t need to specify the goal because the lifecycle phase is already automatically bound to goal `maven-clean-plugin:clean`.
+
+So internally, Maven is effectively running:
+
+```sh
+mvn maven-clean-plugin:clean
 ```
 
 ## Configuration
