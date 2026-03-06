@@ -12,7 +12,9 @@ Normally you don’t need to configure it because Maven runs it automatically wh
 mvn package
 ```
 
-## WAR goal
+## Goals
+
+### `:war`
 
 You can also run the war plugin but it will not automatically compile your project first
 - does NOT run the full Maven lifecycle

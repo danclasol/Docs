@@ -11,7 +11,9 @@ Normally you don’t need to configure it because Maven runs it automatically wh
 mvn package
 ```
 
-## JAR goal
+## Goals
+
+### `:jar`
 
 You can also run the jar plugin but it will not automatically compile your project first
 - does NOT run the full Maven lifecycle
