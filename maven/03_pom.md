@@ -146,6 +146,19 @@ Use properties to avoid repeating values.
 </dependency>
 ```
 
+Maven provides some built-in properties
+
+- `${project.version}`
+- `${project.groupId}`
+- `${project.artifactId}`
+- `${project.basedir}`
+
+
+You can also access OS environment variables
+
+- `${env.PATH}`
+- `${env.JAVA_HOME}`
+
 ### Build Section
 
 The `<build>` section defines how the project is built, including:
