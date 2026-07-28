@@ -14,7 +14,7 @@ const resultado3 = saludarFunction("Pepe", "Mellado", "España"); // Ignora el u
 
 # Ventajas frente a funciones nominales
 
-Las funciones anominas pueden ser pasadas como parametro a otras funciones, mientras que las nominales no
+Las funciones anónimas pueden ser pasadas como parámetro a otras funciones, mientras que las nominales no
 
 ```js
 const obtenerSaludo = function (nombre) {
@@ -35,13 +35,13 @@ const saludar = function (obtenerSaludo, imprimirSaludo) {
 };
 ```
 
-Utilizamos la funcion anomina que imprime por consola
+Utilizamos la funcion anónima que imprime por consola
 
 ```js
 saludar(obtenerSaludo, imprimirSaludo);
 ```
 
-Utilizamos la funcion anomina que muestra una alerta
+Utilizamos la funcion anónima que muestra una alerta
 
 ```js
 saludar(obtenerSaludo, alertSaludo);

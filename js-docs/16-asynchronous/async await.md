@@ -2,7 +2,7 @@
 
 Al usar promesas, cuando se van añadiendo más operaciones complejas, el código empezará a complicarse y será dificil entender el order en el que se ejecutará cada cosa.
 
-Para ello podemos De esta forma que podemos volver nuestro código sincrono, obteniendo así una forma de escribir las promesas mas legible.
+Para ello podemos de esta forma que podemos volver nuestro código sincrono, obteniendo así una forma de escribir las promesas mas legible.
 
 Con `async` podemos definir una función donde se encontrará el `await`, que permite esperar hasta que obtengamos la resolucion de una promesa.
 
