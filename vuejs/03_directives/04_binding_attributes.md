@@ -111,3 +111,65 @@ If you want whitespace from user input to be trimmed automatically, you can add 
 ```html
 <input v-model.trim="msg" />
 ```
+
+## `defineModel()`
+
+The compiler macro `defineModel()` makes much easier to implement `v-model` in child components
+
+- introduced in Vue 3.4
+- before Vue 3.4, you had to manually define 
+    - a modelValue prop
+    - an update:modelValue event
+    - a writable ref called model
+- with defineModel(), Vue generates all of that for you
+
+### Example
+
+- Parent
+
+```html
+<script setup>
+import { ref } from 'vue'
+import ChildComponent from './ChildComponent.vue'
+
+const name = ref('Daniel')
+</script>
+
+<template>
+  <ChildComponent v-model="name" />
+
+  <p>{{ name }}</p>
+</template>
+```
+
+- Child
+
+```html
+<script setup lang="ts">
+const model = defineModel<string>()
+</script>
+
+<template>
+  <input v-model="model">
+</template>
+```
+
+### Multiple models
+
+A component can expose more than one model.
+
+- Parent:
+
+```html
+<UserForm
+  v-model:first-name="firstName"
+  v-model:last-name="lastName"
+/>
+```
+
+- Child:
+
+```html
+const firstName = defineModel<string>('firstName')
+const lastName = defineModel<string>('lastName')
+```
