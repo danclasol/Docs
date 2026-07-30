@@ -14,16 +14,14 @@ The `v-model` directive helps us simplify the above to
 <input v-model="text" />
 ```
 
-## Basic Usage​
-
-### Text​
+## Text​
 
 ```html
 <input v-model="message" placeholder="edit me" />
 <p>Message is: {{ message }}</p>
 ```
 
-### Multiline Text
+## Multiline Text
 
 ```html
 <textarea v-model="message" placeholder="add multiple lines"></textarea>
@@ -31,7 +29,7 @@ The `v-model` directive helps us simplify the above to
 <textarea v-model="message"></textarea>
 ```
 
-### Checkbox​
+## Checkbox​
 
 Single checkbox, boolean value
 
@@ -39,6 +37,8 @@ Single checkbox, boolean value
 <input type="checkbox" id="checkbox" v-model="checked" />
 <label for="checkbox">{{ checked }}</label>
 ```
+
+## Multiple checkboxes
 
 We can also bind multiple checkboxes to the same array or Set value:
 
@@ -59,7 +59,7 @@ const checkedNames = ref([]);
 <label for="mike">Mike</label>
 ```
 
-### Radio
+## Radio
 
 ```html
 <div>Picked: {{ picked }}</div>
@@ -71,7 +71,7 @@ const checkedNames = ref([]);
 <label for="two">Two</label>
 ```
 
-### Select
+## Select
 
 Single select:
 
