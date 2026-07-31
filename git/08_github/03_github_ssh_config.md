@@ -36,7 +36,7 @@ It’s generally recommended to use the largest key size available for increased
 
 ## Generar clave
 
-AOpen Git Bash and run the following:
+Open Git Bash and run the following:
 
 - `ssh-keygen`: command to generate the key
 - `ecdsa`: type of algorithm
