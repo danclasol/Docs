@@ -2,6 +2,12 @@
 
 There are several way of defining queries in Spring Data JPA.
 
+- Method Name Derivation
+- JPQL (Java Persistence Query Language)
+- SQL
+- Stored Procedures
+- Specification API
+
 ## Method Name Derivation
 
 The easiest way of perform complex queries is using method names
