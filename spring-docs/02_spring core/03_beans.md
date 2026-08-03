@@ -2,84 +2,89 @@
 
 Beans are objects that are instantiated, assambled, and managed by the Spring IoC Container.
 
-Sring IoC container manages the creation of beans:
+- is an object that we do not instantiate ourselves
+- Spring creates, initializes, and injects it where it is needed
 
-- scans packages for classes annotated with `@Component`, `@Service`, `@Repository`, or `@Controller
+Spring IoC container manages the creation of beans:
+
+- scans packages for classes annotated with `@Component`, `@Service`, `@Repository`, or `@Controller`
 - automatically creates beans and puts them in the `ApplicationContext`
 - inject dependencies when are set as `@Autowired`
 
-# Beans Scopes
 
-- Singleton
-  - single instance per IoC container
-  - default option
-- Prototype:
-  - new instance each time a bean is requested
-- Request, Session, Global Session:
-  - scopes for web applications
+## Bean Instantiation
 
-## 1. Bean Instantiation
+With annotation `@Bean`, Spring instantiates a bean and registers it in the application context.
 
-Spring creates an instance of your class.
+When using `@Bean`, it is recommended to declare the bean inside a class annotated with `@Configuration`.
 
-No properties or dependencies are injected yet.
+- `@Bean` can only be applied to methods
+- `@Configuration` indicates that the class contains bean definitions
+- Spring creates an instance of the configuration class and invokes each `@Bean` method to create and register the corresponding beans
+- By default, each `@Bean` is a singleton, so the same instance is returned whenever it is requested
+
 
 ```java
+@Configuration
 public class Car {
+  @Bean
   public Car() {
     System.out.println("Car constructor");
   }
 }
 ```
 
-## 2. Dependency Injection
+## `@Component`
 
-Spring injects dependencies into the bean (fields, setters, constructors).
+This annotation marks a class as a Spring-managed bean that will be detected during component scanning.
 
-This is done using annotations like `@Autowired`, `@Value`, etc.
+When Spring scans the package:
 
-```java
-@Autowired
-private Engine engine;
-```
-
-## 3. `BeanNameAware` / `BeanFactoryAware` (Optional)
-
-If your bean implements these interfaces, Spring gives the bean:
-
-- its name (setBeanName)
-- its BeanFactory or ApplicationContext reference
-
-## 4. `@PostConstruct` or Init Method
-
-After all properties are set, Spring calls:
-
-- Methods annotated with `@PostConstruct`
-- Or, `afterPropertiesSet()` if your class implements `InitializingBean`
+- Detects the EmailSender class.
+- Instantiates it
+- Registers it as a bean in the application context.
+- Makes it available for dependency injection.
 
 ```java
-@PostConstruct
-public void init() {
-  System.out.println("Bean is initialized");
+@Component
+public class EmailSender {
 }
 ```
 
-## 5. Bean is Ready to Use
+## `@ComponentScan`
 
-The bean is fully initialized and available for use in your app.
+`@ComponentScan` tells Spring where to search for classes annotated with stereotype annotations (such as @Component, @Service, @Repository, and @Controller) and register them as beans.
 
-## 6. `@PreDestroy` (or `DisposableBean.destroy()`)
-
-When the app is shutting down, Spring cleans up.
-
-It calls:
-
-- Methods annotated with @PreDestroy
-- Or `destroy()` if your class implements `DisposableBean`
+If your beans are located outside the default package hierarchy, specify the packages explicitly:
 
 ```java
-@PreDestroy
-public void cleanup() {
-  System.out.println("Bean is being destroyed");
-}
+@ComponentScan(basePackages = {
+    "com.example.service",
+    "com.shared.library"
+})
 ```
+
+## `@Component` vs `@Bean`
+
+Both register objects as Spring beans, but they do so in different ways.
+
+### @Component
+
+Use @Component when:
+- class belongs to your application
+- you can modify its source code
+- no special creation logic is required
+
+### @Bean
+
+Use when:
+
+- need explicit control over bean creation
+- especially for third-party classes or beans requiring custom configuration
+
+  ```java
+  @Bean PasswordEncoder password() {
+    return PasswordEncoder.defaultForSpring(); // third-party class
+  }
+  ```
+- bean creation depends on configuration or runtime logic

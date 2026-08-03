@@ -20,7 +20,9 @@ This principle inverts the control:
 
 # Dependency Injection (DI)
 
-To implement IoC it neccesary to use a technique called Dependency Injection (DI).
+Dependency Injection (DI) is the most common technique used to implement Inversion of Control (IoC).
+
+> **IoC can also be achieved using design patterns such as the Strategy, Service Locator, or Factory patterns, but Dependency Injection is by far the most widely used approach in Spring.**
 
 Dependency Injection is a design pattern where an object receives the objects it depends on, instead of creating them itself.
 
