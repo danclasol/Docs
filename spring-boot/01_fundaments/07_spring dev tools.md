@@ -9,6 +9,10 @@ https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools
 
 Add the dependency to the `pom.xml` file
 
+- scope: runtime
+- optional: true 
+  - only available during development and using IDE
+
 ```xml
 <dependencies>
     <dependency>
