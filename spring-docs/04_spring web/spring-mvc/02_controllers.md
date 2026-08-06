@@ -65,7 +65,6 @@ public class UserController {
 }
 ```
 
-
 ## Requests
 
 ### @RequestMapping
@@ -79,7 +78,6 @@ Core annotation for mapping HTTP requests to handler methods.
 ```java
 @RequestMapping("/users", method = POST)
 ```
-
 
 ### `@GetMapping`
 
