@@ -40,6 +40,14 @@ You can define custom queries using the `@Query` annotation and using _JPQL_ cod
 List<User> findUsersByName(@Param("name") String name);
 ```
 
+We can create queries to update data using `@Modifying`
+
+```java
+@Modifying
+@Query("UPDATE User u SET u.active = false WHERE u.id = :id")
+boolean deactivate(@Param("id") final Long id);
+```
+
 ## SQL
 
 You can also use real SQL if you need full database power.

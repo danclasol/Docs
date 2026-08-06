@@ -2,6 +2,10 @@
 
 JPA Repository is an interface that helps you easily perform CRUD operations and queries on your entities without writing boilerplate code.
 
+- exclusive of Spring Data JPA
+- extends `PagingAndSortingRespository` 
+  - which extends `CrudRepository`
+
 ## Implement JPARepository
 
 - JpaRepository is generic: must provide `<Entity, ID>` types
