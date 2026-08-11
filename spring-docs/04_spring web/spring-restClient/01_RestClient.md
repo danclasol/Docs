@@ -76,12 +76,23 @@ restClient.options()
 ### GET request
 
 - `uri`: url of the request
+- `body`: retrieve the body of the response as a Movie object 
 
 ```java
 restClient.get()
     .uri("/movies")
     .retrieve()
     .body(Movie.class);
+```
+
+- `uri`: url of the request
+- `toEntity`: retrieve a `ResponseEntity<Movie>`
+
+```java
+restClient.get()
+    .uri("/movies")
+    .retrieve()
+    .toEntity(Movie.class);
 ```
 
 ### POST request
